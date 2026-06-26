@@ -1,5 +1,7 @@
 # USB-C LiDAR Node (VL53L9)
 
+![PCB render](doc/render.png)
+
 An compact and low-cost USB device with integrated LiDAR sensor and IMU. This hardware node packages STMicroelectronics' VL53L9 advanced direct Time-of-Flight (dToF) matrix LiDAR with a 6-axis IMU into a single-cable, plug-and-play USB-C device. Designed for mobile robotics, micro-UAVs, and academic SLAM research. 
 
 ## System Architecture
