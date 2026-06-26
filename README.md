@@ -10,7 +10,6 @@ An compact and low-cost USB device with integrated LiDAR sensor and IMU. This ha
 | **LiDAR** | ST VL53L9CX dToF module with up to 54×42 (2.3 k) discrete ranging zones, 5 cm–8.8 m range | [link](https://www.st.com/resource/en/datasheet/vl53l9cx.pdf)
 | **IMU** | ST LSM6DSV 6-axis IMU with embedded sensor fusion engine, orientation quaternions generated on-chip | [link](https://www.st.com/resource/en/datasheet/lsm6dsv.pdf)
 
-
 ## Data Format
 Raw binary packet framing is used instead of verbose text formats (JSON/CSV) to stay well within the 12 Mbps USB Full-Speed ceiling while imposing zero processing overhead on the MCU.
 
@@ -22,8 +21,6 @@ The 12.5 MHz I3C bus caps practical LiDAR extraction at ~40–50 fps at full res
 | **Binned Navigation** *(high-velocity)* | 24 × 20 zones | 60 Hz | ~1.84 Mbps | Bulletproof |
 
 > **IMU stream:** Even at 400 Hz sampling, the 6-axis raw registers plus quaternion packets total ~0.10 Mbps — continuous streaming has no measurable impact on LiDAR data.
-
----
 
 ## Mechanical Specs
 

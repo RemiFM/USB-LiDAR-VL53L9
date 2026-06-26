@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "USB-LiDAR-VL53L9") (type "KiCad") (uri "${KIPRJMOD}/USB-LiDAR-VL53L9.kicad_sym") (options "") (descr ""))
+)
