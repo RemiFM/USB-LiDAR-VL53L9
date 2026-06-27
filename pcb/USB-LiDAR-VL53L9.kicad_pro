@@ -652,13 +652,17 @@
         "uuid": "f74f2218-c30e-45a2-93ff-09be1aef6a2e"
       }
     ],
-    "used_designators": "#PWR4,J1",
+    "used_designators": "L1,C1-8,#PWR7-27,U5-7",
     "variants": []
   },
   "sheets": [
     [
       "f74f2218-c30e-45a2-93ff-09be1aef6a2e",
       "USB-LiDAR-VL53L9"
+    ],
+    [
+      "5a5bb877-d599-4977-95b0-8c1a8ee6fefa",
+      "Power"
     ]
   ],
   "text_variables": {},

@@ -1,0 +1,189 @@
+(footprint "TI_SOT23_DBV0005A"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "c95ee572-bb20-4510-adb0-e7978aeeb776")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TI_SOT23_DBV0005A"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a82463a-6e72-45f7-88fc-8478449299f1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv733p.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6bc2e66-001f-47e1-a8db-7128b96fd722")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Texas Instruments SOT-23 - 1.45 mm max height (DBV0005A)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aceb7b63-4312-4ee9-8a32-3f9419516796")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1 1.65)
+		(end 1 1.65)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dff983ea-18b9-4789-b06c-6b3c87c48187")
+	)
+	(fp_line
+		(start -0.8 -1.65)
+		(end 1 -1.65)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a1237f1e-53ff-4ffa-8565-61edbe278c8c")
+	)
+	(fp_poly
+		(pts
+			(xy -1.3 -1.5) (xy -1.54 -1.83) (xy -1.06 -1.83)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "be43e9ba-2be3-4206-9d48-629b43ae2e30")
+	)
+	(fp_rect
+		(start -2.1 -1.775)
+		(end 2.1 1.775)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "aeaa79db-e624-44c7-991c-d3d4c2362f80")
+	)
+	(fp_rect
+		(start -0.875 -1.525)
+		(end 0.875 1.525)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "748c054a-2054-4de4-bc22-147afd08197b")
+	)
+	(fp_circle
+		(center -2.25 -0.95)
+		(end -2 -0.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "aa64c119-254b-410b-b16c-8b6a66c4c185")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "de4e7592-fb15-4d6e-8925-8a0230ff71f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(point
+		(at 0 0)
+		(size 1)
+		(layer "F.SilkS")
+		(uuid "5c37015e-bb15-4263-ac66-3f49176ce0df")
+	)
+	(pad "1" smd roundrect
+		(at -1.3 -0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.08333333333)
+		(uuid "86dab430-2f6f-494e-81fe-73bb0c68d687")
+	)
+	(pad "2" smd roundrect
+		(at -1.3 0)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.08333333333)
+		(uuid "1975edbc-2def-482a-af37-d70e89487db3")
+	)
+	(pad "3" smd roundrect
+		(at -1.3 0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.08333333333)
+		(uuid "c821dfad-a205-48ca-8be6-776e03b63651")
+	)
+	(pad "4" smd roundrect
+		(at 1.3 0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.08333333333)
+		(uuid "7ead8401-22b6-40dc-8291-27a85cae77da")
+	)
+	(pad "5" smd roundrect
+		(at 1.3 -0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.08333333333)
+		(uuid "e0a33ca7-e492-46ee-88fb-01af661fa5ae")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/TLV73328PDBVR.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

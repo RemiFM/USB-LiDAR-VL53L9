@@ -2649,6 +2649,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+5V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:Earth"
 			(power global)
 			(pin_numbers
@@ -2916,9 +3055,21 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "<500mW for Lidar"
+		(exclude_from_sim no)
+		(at 144.018 35.052 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "ae468844-9ebe-4275-87bf-b7583d0ab2bb")
+	)
 	(text_box "0101001\n7-bit i2c address: 0x29\n8-bit i2c address: 0x52"
 		(exclude_from_sim no)
-		(at 80.01 55.8801 0)
+		(at 132.08 38.1001 0)
 		(size 26.67 8.8899)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3095,10 +3246,32 @@
 		(uuid "e46bc001-4de8-4c59-b47c-0e0e5d6f7811")
 	)
 	(junction
+		(at 38.1 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb5c355d-23e4-427b-b5f5-0e199d6c6c4b")
+	)
+	(junction
 		(at 157.48 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f67d87bd-13b2-4e18-a22f-2903fd4a2d0e")
+	)
+	(no_connect
+		(at 111.76 57.15)
+		(uuid "0d71b798-4060-44f9-aa7f-129e038fdf28")
+	)
+	(no_connect
+		(at 111.76 66.04)
+		(uuid "8c1d18d7-2ee6-47ef-b280-5f836d06cb80")
+	)
+	(no_connect
+		(at 111.76 59.69)
+		(uuid "91206bc7-37e1-42bf-9235-e2994049126f")
+	)
+	(no_connect
+		(at 111.76 63.5)
+		(uuid "ca886cd6-8999-49da-a199-3d324227fb20")
 	)
 	(wire
 		(pts
@@ -3132,6 +3305,26 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 87.63) (xy 111.76 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17d485d8-fea0-4735-aa49-d2b78776a47d")
+	)
+	(wire
+		(pts
+			(xy 243.84 106.68) (xy 236.22 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a3888f9-e273-45af-8830-e868cb8223f2")
+	)
+	(wire
+		(pts
 			(xy 177.8 87.63) (xy 177.8 100.33)
 		)
 		(stroke
@@ -3159,6 +3352,26 @@
 			(type default)
 		)
 		(uuid "1eecc151-afe3-47e8-a966-587c12f3abfe")
+	)
+	(wire
+		(pts
+			(xy 39.37 120.65) (xy 39.37 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24650cba-4c72-4729-b430-efa84b9222c4")
+	)
+	(wire
+		(pts
+			(xy 38.1 119.38) (xy 39.37 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26f7408b-51f6-4c80-b8cd-809097fef4e1")
 	)
 	(wire
 		(pts
@@ -3209,6 +3422,16 @@
 			(type default)
 		)
 		(uuid "302e38d7-fc7e-4f69-9b00-d97e80603b15")
+	)
+	(wire
+		(pts
+			(xy 92.71 81.28) (xy 111.76 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3597d78c-a0e1-49b0-9d86-05c1d4fd7811")
 	)
 	(wire
 		(pts
@@ -3302,7 +3525,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 151.13) (xy 68.58 149.86)
+			(xy 38.1 182.88) (xy 38.1 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3352,6 +3575,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 78.74) (xy 111.76 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61c05dd6-4a87-44ed-ab69-1b771df4cc4f")
+	)
+	(wire
+		(pts
 			(xy 116.84 100.33) (xy 119.38 100.33)
 		)
 		(stroke
@@ -3372,6 +3605,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 119.38) (xy 36.83 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6882d619-c189-4b20-9a2f-627884b56b83")
+	)
+	(wire
+		(pts
 			(xy 170.18 97.79) (xy 170.18 100.33)
 		)
 		(stroke
@@ -3379,6 +3622,16 @@
 			(type default)
 		)
 		(uuid "6e0f71b2-b69b-4e57-8ad0-43989beef248")
+	)
+	(wire
+		(pts
+			(xy 243.84 102.87) (xy 243.84 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7262d341-26f9-418a-9efb-c4b9f5e8c6fc")
 	)
 	(wire
 		(pts
@@ -3412,6 +3665,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 72.39) (xy 111.76 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bc5ee33-ad77-4db4-acfe-0f98ecb812dc")
+	)
+	(wire
+		(pts
 			(xy 121.92 97.79) (xy 121.92 100.33)
 		)
 		(stroke
@@ -3432,6 +3695,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 69.85) (xy 111.76 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bfc943c-b3a7-472f-b1f9-34bdb0a4dcbe")
+	)
+	(wire
+		(pts
 			(xy 124.46 100.33) (xy 127 100.33)
 		)
 		(stroke
@@ -3449,6 +3722,16 @@
 			(type default)
 		)
 		(uuid "a4583dd4-bb58-46b9-a7c1-cc7ef5a736d3")
+	)
+	(wire
+		(pts
+			(xy 38.1 116.84) (xy 38.1 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ace2d39c-c78c-4373-9eb4-b17badb12581")
 	)
 	(wire
 		(pts
@@ -3499,6 +3782,26 @@
 			(type default)
 		)
 		(uuid "b8fabf7b-6299-4092-a697-7f3a55e2ef26")
+	)
+	(wire
+		(pts
+			(xy 92.71 83.82) (xy 111.76 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba70b5c9-4f96-4465-a5bf-2af5f4cfe034")
+	)
+	(wire
+		(pts
+			(xy 36.83 119.38) (xy 36.83 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd8628b0-8c8c-4529-9564-60bad7b165da")
 	)
 	(wire
 		(pts
@@ -3629,6 +3932,66 @@
 			(type default)
 		)
 		(uuid "ff39a806-cb9d-4a54-9d8e-9bc902143513")
+	)
+	(label "SENSOR_SDA"
+		(at 92.71 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0dd8b94f-956d-4d02-bfa6-a8b5054977ba")
+	)
+	(label "SENSOR_SYNC_IN"
+		(at 92.71 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "17c8cf9f-a727-4e9a-ab22-e48875dfc732")
+	)
+	(label "SENSOR_SCL"
+		(at 92.71 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b156b34-0f5a-474f-892a-20b9a96db579")
+	)
+	(label "SENSOR_AP_CLK"
+		(at 92.71 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1d1904b-55be-441c-a6ba-054d5b47dc72")
+	)
+	(label "SENSOR_XSHUT"
+		(at 92.71 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca7beef4-74c8-430f-841a-7ee7e4e76451")
+	)
+	(label "SENSOR_INTR"
+		(at 92.71 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc43ad8c-c786-477c-9663-d686197a2553")
 	)
 	(symbol
 		(lib_id "USB-LiDAR-VL53L9:VL53L9CX")
@@ -3830,6 +4193,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 243.84 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b310c7f-f591-4efc-ac3f-c7822cd8261e")
+		(property "Reference" "#PWR05"
+			(at 243.84 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 243.84 98.552 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 243.84 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f37da92-e95e-41d7-9208-1486fe82348a")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 139.7 176.53 0)
 		(unit 1)
@@ -3933,6 +4373,83 @@
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 38.1 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63b7c5aa-7412-4a44-984b-ee07b983ac3e")
+		(property "Reference" "#PWR06"
+			(at 38.1 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 38.1 112.522 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 38.1 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fdd519b-502d-4042-b82f-3c99f5299d87")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4086,7 +4603,7 @@
 	)
 	(symbol
 		(lib_id "USB-LiDAR-VL53L9:STM32C551KEU6")
-		(at 68.58 119.38 0)
+		(at 38.1 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4096,7 +4613,7 @@
 		(dnp no)
 		(uuid "72b15ca8-bd49-445b-837c-9e99374a5186")
 		(property "Reference" "U2"
-			(at 72.644 86.868 0)
+			(at 42.164 118.618 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4107,7 +4624,7 @@
 			)
 		)
 		(property "Value" "STM32C551KEU6"
-			(at 72.644 89.408 0)
+			(at 42.164 121.158 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4118,7 +4635,7 @@
 			)
 		)
 		(property "Footprint" "USB-LiDAR-VL53L9:ST_UFQFPN32"
-			(at 68.58 161.036 0)
+			(at 38.1 192.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4129,7 +4646,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c552me.pdf"
-			(at 68.58 161.036 0)
+			(at 38.1 192.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4140,7 +4657,7 @@
 			)
 		)
 		(property "Description" "MAINSTREAM ARM CORTEX-M33 MCU, 1"
-			(at 68.58 161.036 0)
+			(at 38.1 192.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4151,7 +4668,7 @@
 			)
 		)
 		(property "Digi-Key" "497-STM32C551KEU6-ND"
-			(at 68.58 161.036 0)
+			(at 38.1 192.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4162,7 +4679,7 @@
 			)
 		)
 		(property "SKU" "STM32C551KEU6"
-			(at 68.58 161.036 0)
+			(at 38.1 192.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4173,7 +4690,7 @@
 			)
 		)
 		(property "Manufacturer" "STMicroelectronics"
-			(at 68.58 161.036 0)
+			(at 38.1 192.786 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4845,7 +5362,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 151.13 0)
+		(at 38.1 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4855,7 +5372,7 @@
 		(dnp no)
 		(uuid "d6f2871e-c3c3-4ec4-8a39-0b64ddac646f")
 		(property "Reference" "#PWR02"
-			(at 68.58 157.48 0)
+			(at 38.1 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4866,7 +5383,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 155.194 0)
+			(at 38.1 186.944 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4876,7 +5393,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 151.13 0)
+			(at 38.1 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4887,7 +5404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 151.13 0)
+			(at 38.1 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4898,7 +5415,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 151.13 0)
+			(at 38.1 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5070,6 +5587,53 @@
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e"
 					(reference "#PWR03")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 227.33 25.4)
+		(size 33.02 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 229 191 1)
+		)
+		(uuid "5a5bb877-d599-4977-95b0-8c1a8ee6fefa")
+		(property "Sheetname" "Power"
+			(at 227.33 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 227.33 47.5746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e"
+					(page "2")
 				)
 			)
 		)
