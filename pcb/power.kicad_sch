@@ -1990,7 +1990,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f6dd3150-ce0f-4d98-9a13-7d2914920d8e")
+			(uuid "08d022a6-f7a8-4f89-a267-d763fe1db59e")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2067,7 +2067,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "ed7f9ce8-bf93-48b6-9fcb-905d3ea4a330")
+			(uuid "c844844e-089d-452e-8b8d-4851f61edd00")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2144,7 +2144,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "93336c23-2598-4ff1-be56-b0e4227fa8ae")
+			(uuid "3d8c4f64-a993-41da-9fd9-233a1fc880f0")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2221,7 +2221,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "63675c88-73af-4909-9b04-9954de3e5ab2")
+			(uuid "a0f6298a-eb41-42ee-b9ad-faedc67fec9d")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2298,7 +2298,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "564715eb-c525-4fa7-beae-9df07054891e")
+			(uuid "e00d9292-7ddc-4fff-ab34-9bfb7640c7f2")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2409,19 +2409,19 @@
 			)
 		)
 		(pin "4"
-			(uuid "86539996-b6d5-4c39-b192-c8d62c7baad9")
+			(uuid "2116d4f8-5125-4f90-a5c7-570d7cedcc57")
 		)
 		(pin "5"
-			(uuid "393caed3-07c9-4fb1-b303-35f8cb38a1a5")
+			(uuid "2eacb572-b559-482c-9beb-d65fe5e1b439")
 		)
 		(pin "3"
-			(uuid "c5f9af44-778a-4226-9e0b-b44a9e2a57ca")
+			(uuid "690c5f66-0ebd-47f2-b120-c8a17112502a")
 		)
 		(pin "2"
-			(uuid "b3204c1c-4a13-47a0-8860-33e8c33deb48")
+			(uuid "cbc6b384-256d-4bdf-8df7-bb9fde2e4dc3")
 		)
 		(pin "1"
-			(uuid "58a29ebd-0dec-41d1-a6a6-9e5532631420")
+			(uuid "c8cca524-0579-41d6-9cdb-1397eb62706c")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2532,10 +2532,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "6a8e9b44-9bd1-450e-a723-05455c2b328a")
+			(uuid "b6a733fc-0025-4c95-a479-1df6cc821256")
 		)
 		(pin "1"
-			(uuid "380deb5e-ce03-42d4-9963-fffbb48aaae1")
+			(uuid "640609f8-3c87-4b80-a1e1-7407b00aea83")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2646,19 +2646,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "05c445d8-3b78-437e-a6c5-6dacd52c4042")
+			(uuid "21b1591c-5db9-45ee-8b1d-5d267ac8a9ac")
 		)
 		(pin "5"
-			(uuid "4f6aac00-a131-4406-bc57-1c6c7e98cf52")
+			(uuid "78c4af52-d6f6-4d5c-b288-c4269f1271cf")
 		)
 		(pin "4"
-			(uuid "efdcd1e4-4d33-458d-86ed-b738d20a3a92")
+			(uuid "93372e99-4509-4410-9cb6-fa8d0ff6d2d2")
 		)
 		(pin "3"
-			(uuid "6f30afe3-1a2b-43ce-9089-6b93873724d7")
+			(uuid "2df001d8-a0b8-4da6-8c24-205b6b0e08ae")
 		)
 		(pin "1"
-			(uuid "d3ed359c-895f-49ba-8a93-e7e6f936e427")
+			(uuid "3b14cf2f-c98a-4d44-968b-b9b062a714af")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2770,10 +2770,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "ddb8705c-529f-4ac3-800b-25bb8659daf3")
+			(uuid "1d882b7b-b782-41f1-ba28-34c04c240a34")
 		)
 		(pin "1"
-			(uuid "c260c1f2-46f4-4a57-bf90-122e0ed9e0d7")
+			(uuid "d44508f8-efc6-4580-8621-65e9ba12f7ce")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2884,10 +2884,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "f6e43c05-710c-4173-a842-eb89b8ee4f45")
+			(uuid "68a48dd6-c0c3-46f3-82ec-b9e229e346cd")
 		)
 		(pin "1"
-			(uuid "30480be0-63e0-4c8e-99e6-df7dda15db08")
+			(uuid "0713c4b3-53dc-4a9b-b214-63870c0f6275")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -2998,10 +2998,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8a1c2807-7d82-4c2f-83d3-c615074e4eff")
+			(uuid "422adfbf-a72d-4758-8447-17bb5cae86cd")
 		)
 		(pin "1"
-			(uuid "ce5aeb6c-187e-416f-83c8-71fbed69a3e9")
+			(uuid "955e2bec-3cc2-44ea-a06b-1d1d2f58cbb5")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3078,7 +3078,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca8552f1-4bb9-4a26-a4af-ca4ef9d2f76f")
+			(uuid "6d4d4469-f390-4de5-b7fd-1d9f9ecf46c0")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3155,7 +3155,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "82316c44-3273-48dc-8202-c466a7083ea2")
+			(uuid "857078ac-8bcd-4697-a278-f1b0156c7bb3")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3232,7 +3232,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "fc8eb850-7e14-4eb7-9fa2-7df612dd5788")
+			(uuid "3895d210-dd32-45c3-bef4-9745e6ab9bb0")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3309,7 +3309,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f749021b-7d4b-4579-bc7c-9038bfd21f2d")
+			(uuid "e508fd24-6e7c-4514-9d01-cfa400d99fd5")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3386,7 +3386,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "dd9dc59b-1138-48a0-b724-ea4bfd0ab0d9")
+			(uuid "99dcd905-dc00-4878-95bc-2ca60aa6ba82")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3498,10 +3498,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "b6132a2c-cf77-4a2b-8469-25c8d93bf19b")
+			(uuid "d80b4175-639f-42f0-b24a-79a76aab2a19")
 		)
 		(pin "1"
-			(uuid "4699d0f6-f974-428a-837c-f8fa0c9ee47f")
+			(uuid "60a0ddb4-0b62-49b7-adcc-134f2467a225")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3578,7 +3578,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2698f0e2-2b5b-4fa1-8ff1-672df79923c7")
+			(uuid "5ef22da8-6c7f-4d20-9628-566c25346db6")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3689,19 +3689,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "d18bb327-7896-48d7-922b-483dc831533f")
+			(uuid "eee3851f-1d95-4f25-a1d2-295e8cf6458a")
 		)
 		(pin "4"
-			(uuid "88533947-c59c-486e-9002-67d53ebb80d0")
+			(uuid "194f1a2a-054a-4074-9f36-c0a4dea9100f")
 		)
 		(pin "1"
-			(uuid "bbb1fffb-a6ad-4949-8886-8589bfadd25f")
+			(uuid "a22ae8b7-4e20-4485-9f6b-ecde5ec4c3f8")
 		)
 		(pin "5"
-			(uuid "37615662-47dc-4760-90d9-7588fe889b4a")
+			(uuid "f6ef61c4-fae5-4279-9553-7fd21cedf825")
 		)
 		(pin "3"
-			(uuid "f608195a-2b93-413e-9072-af5edb0049cd")
+			(uuid "da11ab0a-c3c4-4463-8f3f-d873cf54afe2")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3813,10 +3813,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "2c63c41c-3a0e-49f6-a422-48215663be5f")
+			(uuid "d64bf608-c74a-4968-96f1-2dee18d217e1")
 		)
 		(pin "1"
-			(uuid "e900ac24-137a-4ddd-bf49-a1ceb89b2b65")
+			(uuid "f26b9561-85e2-4b3e-af01-83aeebeadb3c")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -3893,7 +3893,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "24d7c5fd-02f1-4c92-b231-67efce31bc25")
+			(uuid "f513b252-0d6c-49dd-9c00-78c83e477ea3")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4003,10 +4003,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3fb235c0-6a4f-4314-bbc7-55a42545ec5c")
+			(uuid "1ee6b47d-5e52-4660-8466-709f69d20620")
 		)
 		(pin "2"
-			(uuid "5f154207-fd2f-43e8-94a9-88d6d76d3508")
+			(uuid "ee6b0a37-986d-4b25-be57-8d92bd660773")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4083,7 +4083,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "42b16c9c-a180-43d0-8708-15079143dcd4")
+			(uuid "94226ed6-7198-4ee7-a73b-1d2c4879ef09")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4160,7 +4160,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb900ab1-f628-4669-82bc-bf156d321762")
+			(uuid "db695b44-03dd-4649-9e04-b38f09d689e3")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4237,7 +4237,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "8225faa4-f599-4776-b0af-6dfaaa4b4850")
+			(uuid "6402bb72-3947-490b-8e68-f7e38fff4b06")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4314,7 +4314,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "ce3894db-c4c3-430a-a0b3-bff2eac11e7d")
+			(uuid "828d05d5-4fba-484b-ad48-dab3b614a20f")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4426,10 +4426,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5b24a470-f17e-4bb3-a9c1-4bb73b79cb13")
+			(uuid "e1262aa9-0eef-424e-bae3-4c39223301f8")
 		)
 		(pin "1"
-			(uuid "8f7dc393-489c-4e41-ab98-2c6cd031966a")
+			(uuid "40f2e4d0-afc2-46dc-92d9-bbb42047cf4c")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4506,7 +4506,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "60d7a997-0ba1-4b17-b2ac-e3623f56e4c3")
+			(uuid "3bac96aa-9e28-42a8-9b78-039e5e90dca7")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4617,10 +4617,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8db5dcbc-6fde-4fbd-967b-506e356ef6c6")
+			(uuid "71d15336-10a7-465a-b957-b071a514c481")
 		)
 		(pin "1"
-			(uuid "e2ef30e4-3fe4-40a7-b909-c16f6b61d5e0")
+			(uuid "c0963cc7-7016-44d6-8ed0-0b11db43ba56")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4697,7 +4697,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "abd434f6-6dea-4169-a3ea-3654068ae36c")
+			(uuid "2fb50fe0-74fc-4319-b482-d686513773f3")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4774,7 +4774,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ba5046e-a5ab-445d-b655-88c772cf0176")
+			(uuid "7a29943a-0f3b-45dc-a692-1f7e95d6fabe")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4885,19 +4885,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "f22e6270-7587-47f3-b78d-331b019a2acd")
+			(uuid "8de54345-2689-4e97-9ade-c50a9dcc07a1")
 		)
 		(pin "1"
-			(uuid "facaad19-66b9-4533-bd22-f388523a777a")
+			(uuid "f11940d1-5c2b-4a22-a195-850734846e8b")
 		)
 		(pin "5"
-			(uuid "63411cd9-d69b-47fd-9dc9-d1615bccffed")
+			(uuid "78a8a73b-19c9-4465-98ff-6cbdf13fffae")
 		)
 		(pin "3"
-			(uuid "60ffd2c2-a588-439d-8e26-f0a924048e3d")
+			(uuid "15188a28-7aaf-46da-98ec-baaf80f56bd3")
 		)
 		(pin "4"
-			(uuid "c84b01a4-ffd6-4d62-95d8-552da3116530")
+			(uuid "4be62fcf-871b-4be4-b7a1-552e9efff3cd")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
@@ -4974,7 +4974,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d6dfad57-d647-4b55-a105-f91cad44b415")
+			(uuid "63f976ef-97ab-401e-bade-7bfac48f0ce3")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"

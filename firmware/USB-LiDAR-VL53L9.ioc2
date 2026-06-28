@@ -532,7 +532,7 @@
     },
     "HAL_GPIO_PROJECT_USE_HAL": {
       "name": "HAL_GPIO_PROJECT_USE_HAL",
-      "value": 13,
+      "value": 9,
       "originator": "sw-config-semaphore"
     },
     "RCC_PROJECT_HSE_STARTUP_TIME": {

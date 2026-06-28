@@ -652,7 +652,7 @@
         "uuid": "f74f2218-c30e-45a2-93ff-09be1aef6a2e"
       }
     ],
-    "used_designators": "L1,C1-8,#PWR7-27,U5-7",
+    "used_designators": "R1-5,#PWR39-42,U8",
     "variants": []
   },
   "sheets": [
@@ -663,6 +663,14 @@
     [
       "5a5bb877-d599-4977-95b0-8c1a8ee6fefa",
       "Power"
+    ],
+    [
+      "89073032-b5a9-4994-931e-998ef2659408",
+      "LiDAR"
+    ],
+    [
+      "ab4da3c3-99ce-4525-831c-d6047ff492e2",
+      "IMU"
     ]
   ],
   "text_variables": {},
