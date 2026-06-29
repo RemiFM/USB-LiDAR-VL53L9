@@ -652,7 +652,7 @@
         "uuid": "f74f2218-c30e-45a2-93ff-09be1aef6a2e"
       }
     ],
-    "used_designators": "R1-5,#PWR39-42,U8",
+    "used_designators": "U10,R8-10,D2,C21-24,FB1-2,#PWR5,#PWR52-66,J3-4",
     "variants": []
   },
   "sheets": [
@@ -666,11 +666,15 @@
     ],
     [
       "89073032-b5a9-4994-931e-998ef2659408",
-      "LiDAR"
+      "LiDAR Sensor"
     ],
     [
       "ab4da3c3-99ce-4525-831c-d6047ff492e2",
-      "IMU"
+      "IMU Sensor"
+    ],
+    [
+      "3d29260a-8d7f-4119-a0e3-1d027e51dbb9",
+      "Microcontroller"
     ]
   ],
   "text_variables": {},
