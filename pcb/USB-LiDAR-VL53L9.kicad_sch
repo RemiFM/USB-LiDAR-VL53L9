@@ -108,9 +108,111 @@
 			(embedded_fonts no)
 		)
 	)
+	(text_box "TODO:\n[] GND to SHIELD connection\n[] LiDAR aux connections"
+		(exclude_from_sim no)
+		(at 185.42 68.58 0)
+		(size 38.1 15.24)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Ubuntu")
+				(size 1.905 1.905)
+				(color 72 72 72 1)
+			)
+			(justify left top)
+		)
+		(uuid "c7c4a701-db59-4e83-be18-8fa61d0099d2")
+	)
+	(wire
+		(pts
+			(xy 129.54 48.26) (xy 144.78 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f3f7a1c-32a3-4820-8111-aea03952e0c5")
+	)
+	(wire
+		(pts
+			(xy 129.54 95.25) (xy 144.78 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25d3c448-59df-4152-8ceb-c15f36a1d491")
+	)
+	(wire
+		(pts
+			(xy 129.54 81.28) (xy 144.78 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3702bca4-577d-4b09-80a9-f7a864b37c95")
+	)
+	(wire
+		(pts
+			(xy 129.54 88.9) (xy 144.78 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "553c3c19-ca62-415d-b96d-ac76f86cc956")
+	)
+	(wire
+		(pts
+			(xy 129.54 92.71) (xy 144.78 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "777d58ce-fd65-4923-bd0b-5c809e27bbba")
+	)
+	(wire
+		(pts
+			(xy 129.54 83.82) (xy 144.78 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79ab92f9-428e-4e8b-9992-d8402f2715ff")
+	)
+	(wire
+		(pts
+			(xy 129.54 86.36) (xy 144.78 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de28e5f-c32b-4b3b-921d-1e47d262004b")
+	)
+	(wire
+		(pts
+			(xy 129.54 50.8) (xy 144.78 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6bf6c71-6fb3-4772-a13c-6814f71e2cbb")
+	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 139.7 176.53 0)
+		(at 149.86 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -121,7 +223,7 @@
 		(fields_autoplaced yes)
 		(uuid "216ecbf4-043e-4b86-b862-d74b46f4c3ce")
 		(property "Reference" "H2"
-			(at 142.24 175.2599 0)
+			(at 152.4 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -132,7 +234,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 142.24 177.7999 0)
+			(at 152.4 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -143,7 +245,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 139.7 176.53 0)
+			(at 149.86 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -154,7 +256,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 176.53 0)
+			(at 149.86 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -165,7 +267,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 139.7 176.53 0)
+			(at 149.86 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -176,7 +278,7 @@
 			)
 		)
 		(property "Digi-Key" ""
-			(at 139.7 176.53 0)
+			(at 149.86 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -187,7 +289,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 139.7 176.53 0)
+			(at 149.86 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -198,7 +300,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 139.7 176.53 0)
+			(at 149.86 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -219,7 +321,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 151.13 167.64 0)
+		(at 162.56 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -230,7 +332,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2687074-bc6c-4bb0-b591-1eeda5c7263c")
 		(property "Reference" "H3"
-			(at 153.67 166.3699 0)
+			(at 165.1 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -241,7 +343,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 153.67 168.9099 0)
+			(at 165.1 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -252,7 +354,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 151.13 167.64 0)
+			(at 162.56 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -263,7 +365,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 167.64 0)
+			(at 162.56 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -274,7 +376,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 151.13 167.64 0)
+			(at 162.56 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -285,7 +387,7 @@
 			)
 		)
 		(property "Digi-Key" ""
-			(at 151.13 167.64 0)
+			(at 162.56 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -296,7 +398,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 151.13 167.64 0)
+			(at 162.56 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -307,7 +409,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 151.13 167.64 0)
+			(at 162.56 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -328,7 +430,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 151.13 176.53 0)
+		(at 162.56 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -339,7 +441,7 @@
 		(fields_autoplaced yes)
 		(uuid "ccc58ea6-3df5-4da4-8ad5-0405f63b3c5d")
 		(property "Reference" "H4"
-			(at 153.67 175.2599 0)
+			(at 165.1 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -350,7 +452,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 153.67 177.7999 0)
+			(at 165.1 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -361,7 +463,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 151.13 176.53 0)
+			(at 162.56 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -372,7 +474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 176.53 0)
+			(at 162.56 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -383,7 +485,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 151.13 176.53 0)
+			(at 162.56 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -394,7 +496,7 @@
 			)
 		)
 		(property "Digi-Key" ""
-			(at 151.13 176.53 0)
+			(at 162.56 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -405,7 +507,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 151.13 176.53 0)
+			(at 162.56 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -416,7 +518,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 151.13 176.53 0)
+			(at 162.56 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -437,7 +539,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 139.7 167.64 0)
+		(at 149.86 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -448,7 +550,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3a01ccf-c851-4284-bca2-191f0935e522")
 		(property "Reference" "H1"
-			(at 142.24 166.3699 0)
+			(at 152.4 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -459,7 +561,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 142.24 168.9099 0)
+			(at 152.4 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -470,7 +572,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 139.7 167.64 0)
+			(at 149.86 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -481,7 +583,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 167.64 0)
+			(at 149.86 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -492,7 +594,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 139.7 167.64 0)
+			(at 149.86 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -503,7 +605,7 @@
 			)
 		)
 		(property "Digi-Key" ""
-			(at 139.7 167.64 0)
+			(at 149.86 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -514,7 +616,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 139.7 167.64 0)
+			(at 149.86 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -525,7 +627,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 139.7 167.64 0)
+			(at 149.86 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -545,8 +647,8 @@
 		)
 	)
 	(sheet
-		(at 143.51 49.53)
-		(size 87.63 38.1)
+		(at 104.14 44.45)
+		(size 25.4 54.61)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -561,7 +663,7 @@
 		)
 		(uuid "3d29260a-8d7f-4119-a0e3-1d027e51dbb9")
 		(property "Sheetname" "Microcontroller"
-			(at 143.51 48.6533 0)
+			(at 104.14 43.5733 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -574,7 +676,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 143.51 88.2527 0)
+			(at 104.14 99.6827 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -582,6 +684,86 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SCL_3V3" output
+			(at 129.54 48.26 0)
+			(uuid "a7bb3ac8-65e6-4097-9e51-ef67f87b02fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA_3V3" bidirectional
+			(at 129.54 50.8 0)
+			(uuid "ecf0513b-0179-43e9-8d77-7e4a1c6fefcb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI_SCK" output
+			(at 129.54 81.28 0)
+			(uuid "e33cb4fb-ac9e-4028-990c-bdfff91a274b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI_~{CS}" output
+			(at 129.54 83.82 0)
+			(uuid "9710084a-386a-49e5-b24b-5441e171ccd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI_MISO" input
+			(at 129.54 86.36 0)
+			(uuid "c6169d46-d02d-4e2c-9132-66613c35475c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI_MOSI" output
+			(at 129.54 88.9 0)
+			(uuid "47510b76-178a-4165-b794-ada055aaf2c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IMU_INT1" input
+			(at 129.54 92.71 0)
+			(uuid "e70f6386-030a-415d-8570-e2981f666238")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IMU_INT2" input
+			(at 129.54 95.25 0)
+			(uuid "90e68183-6991-45ed-bf7f-74fd49f94b03")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -593,8 +775,8 @@
 		)
 	)
 	(sheet
-		(at 243.84 20.32)
-		(size 33.02 21.59)
+		(at 104.14 109.22)
+		(size 25.4 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -604,11 +786,11 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1)
+			(color 255 194 194 1)
 		)
 		(uuid "5a5bb877-d599-4977-95b0-8c1a8ee6fefa")
 		(property "Sheetname" "Power"
-			(at 243.84 19.6084 0)
+			(at 104.14 108.5084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -621,7 +803,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 243.84 42.4946 0)
+			(at 104.14 131.3946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -640,8 +822,8 @@
 		)
 	)
 	(sheet
-		(at 243.84 52.07)
-		(size 29.21 20.32)
+		(at 144.78 44.45)
+		(size 25.4 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -652,11 +834,11 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1)
+			(color 194 255 194 1)
 		)
 		(uuid "89073032-b5a9-4994-931e-998ef2659408")
 		(property "Sheetname" "LiDAR Sensor"
-			(at 243.84 51.3584 0)
+			(at 144.78 43.5733 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -669,7 +851,7 @@
 			)
 		)
 		(property "Sheetfile" "lidar.kicad_sch"
-			(at 243.84 72.9746 0)
+			(at 144.78 65.3927 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -677,6 +859,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SCL_3V3" input
+			(at 144.78 48.26 180)
+			(uuid "97d42038-c9fb-467b-885f-879d4d064d5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA_3V3" bidirectional
+			(at 144.78 50.8 180)
+			(uuid "b19864b4-c945-4ff1-8bac-0248ffecf85f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -688,8 +890,8 @@
 		)
 	)
 	(sheet
-		(at 204.47 26.67)
-		(size 27.94 16.51)
+		(at 144.78 77.47)
+		(size 25.4 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -700,11 +902,11 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1)
+			(color 194 255 194 1)
 		)
 		(uuid "ab4da3c3-99ce-4525-831c-d6047ff492e2")
 		(property "Sheetname" "IMU Sensor"
-			(at 204.47 25.9584 0)
+			(at 144.78 76.5933 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -717,7 +919,7 @@
 			)
 		)
 		(property "Sheetfile" "IMU.kicad_sch"
-			(at 204.47 43.7646 0)
+			(at 144.78 99.6827 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -725,6 +927,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "IMU_INT1" output
+			(at 144.78 92.71 180)
+			(uuid "cdfdd778-f1d3-4876-b139-54959857e5b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IMU_INT2" output
+			(at 144.78 95.25 180)
+			(uuid "9f891d4f-5a22-40f8-ac24-68dd84ffd140")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_MISO" output
+			(at 144.78 86.36 180)
+			(uuid "ed0db49f-8ab2-427d-9dc5-8e1f61a5cddb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_MOSI" input
+			(at 144.78 88.9 180)
+			(uuid "1b28d56b-31a2-47dc-a4d0-1f2539420de7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_SCK" input
+			(at 144.78 81.28 180)
+			(uuid "7928b5ca-f63d-4864-afad-5dca027bb00e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_~{CS}" input
+			(at 144.78 83.82 180)
+			(uuid "29263014-56cd-4775-bee7-3c675e91e279")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
