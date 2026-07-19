@@ -108,10 +108,10 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "TODO:\n[] GND to SHIELD connection\n[] LiDAR aux connections"
+	(text_box "TODO:\n[ ] GND to SHIELD connection\n[ ] LiDAR aux connections\n[ ] Change MCU STM32C551 to STM32C552\n[x] CAN circuitry\n[ ] JST GH connector for UART/CAN/TRIGGER/GPIO\n[x] Debug header (0.5\" single line?)"
 		(exclude_from_sim no)
 		(at 185.42 68.58 0)
-		(size 38.1 15.24)
+		(size 78.74 38.1)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -129,6 +129,16 @@
 			(justify left top)
 		)
 		(uuid "c7c4a701-db59-4e83-be18-8fa61d0099d2")
+	)
+	(wire
+		(pts
+			(xy 88.9 50.8) (xy 104.14 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03445d36-6d9a-40dd-ad4d-2af9507d5d4e")
 	)
 	(wire
 		(pts
@@ -152,6 +162,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 48.26) (xy 104.14 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29de213a-849c-4747-9740-8bc053c10d7e")
+	)
+	(wire
+		(pts
 			(xy 129.54 81.28) (xy 144.78 81.28)
 		)
 		(stroke
@@ -162,6 +182,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 60.96) (xy 104.14 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4056088f-1cd4-41b3-9da4-31a88765b255")
+	)
+	(wire
+		(pts
 			(xy 129.54 88.9) (xy 144.78 88.9)
 		)
 		(stroke
@@ -169,6 +199,16 @@
 			(type default)
 		)
 		(uuid "553c3c19-ca62-415d-b96d-ac76f86cc956")
+	)
+	(wire
+		(pts
+			(xy 88.9 58.42) (xy 104.14 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fe18b4d-c273-49c3-84e5-427d1a028e83")
 	)
 	(wire
 		(pts
@@ -209,6 +249,16 @@
 			(type default)
 		)
 		(uuid "c6bf6c71-6fb3-4772-a13c-6814f71e2cbb")
+	)
+	(wire
+		(pts
+			(xy 129.54 55.88) (xy 144.78 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe70cbcb-0cb5-46df-b494-3be66b0b2efc")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -766,10 +816,148 @@
 				(justify right)
 			)
 		)
+		(pin "CAN_RX" input
+			(at 104.14 48.26 180)
+			(uuid "181dba87-47e2-478e-aaf3-81dec749ec61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_TX" output
+			(at 104.14 50.8 180)
+			(uuid "e3c8481d-beb7-4f4b-a3a6-733a7ba1087b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYNC_IN" output
+			(at 129.54 55.88 0)
+			(uuid "56d22f2a-d592-4fd8-909d-b028616c51e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_L" bidirectional
+			(at 104.14 60.96 180)
+			(uuid "f7c23cd6-5f50-419b-a4b4-9de00863121b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_H" bidirectional
+			(at 104.14 58.42 180)
+			(uuid "f4fa1258-d748-4a46-9a19-7e02dff52bb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 44.45)
+		(size 25.4 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.2286)
+			(type solid)
+		)
+		(fill
+			(color 194 255 194 1)
+		)
+		(uuid "5248bde7-8188-48ed-91e3-af3a990f58ef")
+		(property "Sheetname" "CAN Transceiver"
+			(at 63.5 43.7003 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CAN.kicad_sch"
+			(at 63.5 65.3927 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CAN_H" bidirectional
+			(at 88.9 58.42 0)
+			(uuid "707d5ada-091a-43f2-8076-a90cf38b824b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_TX" input
+			(at 88.9 50.8 0)
+			(uuid "394e84be-d8a5-4f5a-b3da-2a5f09556734")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_RX" output
+			(at 88.9 48.26 0)
+			(uuid "3e85ab71-df26-4037-9ab9-008587c9cfc3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_L" bidirectional
+			(at 88.9 60.96 0)
+			(uuid "ac5f4d4e-1a14-4746-abec-f9af0def76f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e"
+					(page "6")
 				)
 			)
 		)
@@ -874,6 +1062,16 @@
 		(pin "SDA_3V3" bidirectional
 			(at 144.78 50.8 180)
 			(uuid "b19864b4-c945-4ff1-8bac-0248ffecf85f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYNC_IN" input
+			(at 144.78 55.88 180)
+			(uuid "84b9814a-4d2f-4024-9752-aad3232d8b5a")
 			(effects
 				(font
 					(size 1.27 1.27)
