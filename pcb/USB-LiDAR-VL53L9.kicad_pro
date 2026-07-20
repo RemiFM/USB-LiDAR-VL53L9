@@ -652,7 +652,7 @@
         "uuid": "f74f2218-c30e-45a2-93ff-09be1aef6a2e"
       }
     ],
-    "used_designators": "R14,JP1-2,C28-29,U11,#PWR47,#PWR65-66,#PWR74-77,J3-5",
+    "used_designators": "#PWR100-101,C36,D6-8,R20-23",
     "variants": []
   },
   "sheets": [
@@ -675,10 +675,6 @@
     [
       "3d29260a-8d7f-4119-a0e3-1d027e51dbb9",
       "Microcontroller"
-    ],
-    [
-      "5248bde7-8188-48ed-91e3-af3a990f58ef",
-      "CAN Transceiver"
     ]
   ],
   "text_variables": {},

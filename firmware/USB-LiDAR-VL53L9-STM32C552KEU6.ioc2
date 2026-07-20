@@ -19,9 +19,9 @@
     },
     {
       "id": "HSE",
-      "value": 8000000,
+      "value": "16000000",
       "isLocked": false,
-      "outFrequency": 8000000
+      "outFrequency": 16000000
     },
     {
       "id": "HSI",
@@ -33,7 +33,7 @@
       "id": "HSE_Divider_RTC",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 8000000
+      "outFrequency": 16000000
     },
     {
       "id": "RTC_Clock_Source",
@@ -73,21 +73,21 @@
     },
     {
       "id": "MCO2_Clock_Source",
-      "value": "System_Clock_Frequency_inputid",
+      "value": "HSE_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 16000000
     },
     {
       "id": "MCO2_div_Clock",
-      "value": 1,
+      "value": "1",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 16000000
     },
     {
       "id": "MCO2_Input_Source",
-      "value": 144000000,
+      "value": 16000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 16000000
     },
     {
       "id": "I2C2_Clock_Source",
@@ -421,9 +421,9 @@
     },
     {
       "id": "PSI_Clock_Mux",
-      "value": "HSI_DIV_18_inputid",
+      "value": "HSE_inputid",
       "isLocked": false,
-      "outFrequency": 8000000
+      "outFrequency": 16000000
     },
     {
       "id": "HSI_DIV_18",
@@ -481,7 +481,7 @@
     },
     {
       "id": "USB_RNG_Clock_Source",
-      "value": "HSI_DIV_3_inputid",
+      "value": "PSI_DIV_3_inputid",
       "isLocked": false,
       "outFrequency": 48000000
     }
@@ -509,7 +509,7 @@
     },
     "HAL_CORTEX_PROJECT_USE_HAL": {
       "name": "HAL_CORTEX_PROJECT_USE_HAL",
-      "value": 4,
+      "value": 5,
       "originator": "sw-config-semaphore"
     },
     "HAL_ICACHE_CORE_ENABLED": {
@@ -534,7 +534,7 @@
     },
     "HAL_SYSTEM_CORE_EXTI_CALLBACK_USER_DATA": {
       "name": "HAL_SYSTEM_CORE_EXTI_CALLBACK_USER_DATA",
-      "value": false,
+      "value": true,
       "originator": "556db68c-8974-4b5e-8151-3f0dd4dc1905"
     },
     "RCC_PROJECT_HSE_STARTUP_TIME": {
@@ -549,7 +549,7 @@
     },
     "HAL_GPIO_PROJECT_USE_HAL": {
       "name": "HAL_GPIO_PROJECT_USE_HAL",
-      "value": 17,
+      "value": 18,
       "originator": "sw-config-semaphore"
     },
     "HAL_CORTEX_SYSTICK_CORE_ENABLED": {
@@ -581,14 +581,47 @@
       "name": "HAL_UART_PROJECT_USE_HAL",
       "value": 1,
       "originator": "sw-config-semaphore"
+    },
+    "HAL_EXTI_PROJECT_USE_HAL": {
+      "name": "HAL_EXTI_PROJECT_USE_HAL",
+      "value": 1,
+      "originator": "sw-config-semaphore"
+    },
+    "HAL_EXTI_SYSTEM_GPIO_STANDARD_EXTI": {
+      "name": "HAL_EXTI_SYSTEM_GPIO_STANDARD_EXTI",
+      "value": 1,
+      "originator": "sw-config-semaphore"
     }
   }
 }"""
 "File: .settings/exti.store.json" = """
 {
   "version": 2,
-  "resourcesAllocations": [],
-  "resourcesNeeds": []
+  "resourcesAllocations": [
+    {
+      "resourceId": "EXTI3",
+      "parentResourceId": "PA3",
+      "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:GPIO@2.1.0#HAL GPIO Init",
+      "needId": "1bb75c24-4a15-4df6-bded-b5bd91bf4cc6",
+      "needType": "need.exti.lines",
+      "selector": "*",
+      "entity": "peripheral.EVENTCTL",
+      "swProjectURI": "cube:e083f389-ecca-4928-b0cd-6f549c28d12d/221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+      "swInstanceId": "5eb90aff-d6fe-4994-81d0-43341b0f3f3c"
+    }
+  ],
+  "resourcesNeeds": [
+    {
+      "needType": "need.exti.lines",
+      "projectUri": "cube:e083f389-ecca-4928-b0cd-6f549c28d12d/221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+      "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:GPIO@2.1.0#HAL GPIO Init",
+      "componentInstanceId": "5eb90aff-d6fe-4994-81d0-43341b0f3f3c",
+      "selector": "*",
+      "id": "1bb75c24-4a15-4df6-bded-b5bd91bf4cc6",
+      "owner": "PA3",
+      "propertyPath": ""
+    }
+  ]
 }"""
 "File: .settings/global-project-components.store.json" = """
 {
@@ -654,6 +687,13 @@
           "priority": 0,
           "subpriority": 0,
           "used": true
+        },
+        {
+          "id": 20,
+          "name": "EXTI3",
+          "priority": 0,
+          "subpriority": 0,
+          "used": true
         }
       ],
       "needs": [
@@ -661,6 +701,11 @@
           "needId": "633d7e83-cece-444f-b2a5-bda73840275d",
           "destination": "USB",
           "owner": "USB"
+        },
+        {
+          "needId": "e211552d-76d4-47fc-a01a-068fc7dadd8a",
+          "destination": "EXTI3",
+          "owner": "EXTI3"
         }
       ]
     }
@@ -674,6 +719,16 @@
       "selector": "*",
       "id": "633d7e83-cece-444f-b2a5-bda73840275d",
       "owner": "USB",
+      "propertyPath": ""
+    },
+    {
+      "needType": "need.interrupt.lines",
+      "projectUri": "cube:e083f389-ecca-4928-b0cd-6f549c28d12d/221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+      "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32 LL:EXTI@2.1.0#LL",
+      "componentInstanceId": "5eb90aff-d6fe-4994-81d0-43341b0f3f3c",
+      "selector": "*",
+      "id": "e211552d-76d4-47fc-a01a-068fc7dadd8a",
+      "owner": "EXTI3",
       "propertyPath": ""
     }
   ],
@@ -769,6 +824,70 @@
           "index": 8,
           "port": "B"
         }
+      },
+      {
+        "pin": {
+          "name": "PA2",
+          "position": "8",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "t",
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 2,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "GPIOA",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA3",
+          "position": "9",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 3,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "GPIOA",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB7",
+          "position": "30",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 7,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "GPIOB",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
       }
     ],
     "needConfigurations": [
@@ -1012,10 +1131,10 @@
       },
       {
         "signal": {
-          "instance": "I3C1",
-          "name": "I3C1_SCL",
+          "instance": "RCC",
+          "name": "RCC_MCO2",
           "type": "alternate",
-          "alternateFunctionId": "AF2"
+          "alternateFunctionId": "AF0"
         },
         "pin": {
           "name": "PA9",
@@ -1028,7 +1147,7 @@
           "index": 9,
           "port": "A"
         },
-        "needId": "6b6ed25a-7e24-4b74-b2cf-cbd9edf12268",
+        "needId": "cbaf68c8-0fac-43c2-836a-af64199d00c0",
         "ownedByUser": false,
         "pinned": false
       },
@@ -1053,6 +1172,30 @@
           "port": "B"
         },
         "needId": "dcdefecb-7dc6-40ce-add4-59dc7b5df951",
+        "ownedByUser": false,
+        "pinned": false
+      },
+      {
+        "signal": {
+          "instance": "I3C1",
+          "name": "I3C1_SCL",
+          "type": "alternate",
+          "alternateFunctionId": "AF2"
+        },
+        "pin": {
+          "name": "PB4(NJTRST)",
+          "position": "27",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 4,
+          "port": "B"
+        },
+        "needId": "6b6ed25a-7e24-4b74-b2cf-cbd9edf12268",
         "ownedByUser": false,
         "pinned": false
       },
@@ -1175,6 +1318,24 @@
       "labels": [
         "SPI_CSn"
       ]
+    },
+    {
+      "position": "8",
+      "labels": [
+        "GPIO_OUT"
+      ]
+    },
+    {
+      "position": "9",
+      "labels": [
+        "LIDAR_INTR"
+      ]
+    },
+    {
+      "position": "30",
+      "labels": [
+        "LIDAR_SHDN"
+      ]
     }
   ],
   "pinout-gpio-assignations": [
@@ -1240,6 +1401,46 @@
           "ioType": "I/O",
           "ioStructure": "FT",
           "index": 8,
+          "port": "B"
+        },
+        {
+          "name": "PA2",
+          "position": "8",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "t",
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 2,
+          "port": "A"
+        },
+        {
+          "name": "PA3",
+          "position": "9",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 3,
+          "port": "A"
+        },
+        {
+          "name": "PB7",
+          "position": "30",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 7,
           "port": "B"
         }
       ]
@@ -1373,9 +1574,21 @@
       "softwareProjectId": "221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
       "signal": "UART4_TX",
       "instanceName": "UART4"
+    },
+    {
+      "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:RCC@2.1.0#HAL CORE Init GPIO and RCC",
+      "componentInstanceId": "abca66f8-09d5-4866-9ba0-0b2ff018ef22",
+      "needId": "cbaf68c8-0fac-43c2-836a-af64199d00c0",
+      "softwareProjectId": "221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+      "signal": "RCC_MCO2",
+      "instanceName": "RCC"
     }
   ],
-  "pinout-user-settings": {}
+  "pinout-user-settings": {
+    "package": {
+      "isFlipped": false
+    }
+  }
 }"""
 "File: STM32C552KEU6_project/.settings/hw-composition.store.json" = """
 {
@@ -1526,8 +1739,8 @@ solution:
       "driverConfigurationId": "97721929-ace2-4275-9916-9a1001a42193"
     },
     "UART4": {
-      "driverConfigurationId": "fbd58e0e-d39f-4350-9e5e-bff6eabe0bd2",
       "driverId": "STMicroelectronics::Device:STM32CubeMX2 Config:UART",
+      "driverConfigurationId": "fbd58e0e-d39f-4350-9e5e-bff6eabe0bd2",
       "mode": "Async"
     }
   }
@@ -1728,6 +1941,14 @@ solution:
         "id": "d7e8a9db-5cb2-4260-9491-ccf357a8acf2",
         "componentDescriptionId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:UART@2.1.0#HAL CORE GPIO DMA Init and UART",
         "label": "STM32CubeMX2 Config:UART",
+        "expanded": true,
+        "userAdded": true
+      },
+      {
+        "$type": "http://st.com/schema/sw-composer#//MultiInstanceSWComponent",
+        "id": "7536d82d-8bc9-4a40-8a23-27f88de2a180",
+        "componentDescriptionId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:TIM@2.1.0#HAL CORE GPIO DMA Init and TIM",
+        "label": "STM32CubeMX2 Config:TIM",
         "expanded": true,
         "userAdded": true
       }
@@ -2004,6 +2225,17 @@ solution:
           "x": 0,
           "y": 0
         }
+      },
+      {
+        "$id": "7f22634f-e674-43b4-b1ab-f5260fbc4d65",
+        "$type": "http://www.eclipse.org/emfcloud/modelserver/notation#//Shape",
+        "semanticElement": {
+          "uri": "7536d82d-8bc9-4a40-8a23-27f88de2a180"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
       }
     ]
   }
@@ -2118,8 +2350,8 @@ solution:
                 "use_hal_eth_max_tx_ch_nb": 1
               },
               "exti_feature": {
-                "use_register_callback": false,
-                "user_data": false
+                "use_register_callback": true,
+                "user_data": true
               },
               "fdcan_feature": {
                 "use_register_callback": false,
@@ -2539,7 +2771,7 @@ solution:
                 "clk_outputs": {
                   "lsco": false,
                   "mco1": false,
-                  "mco2": false
+                  "mco2": true
                 },
                 "audio_clock": {
                   "enable": false
@@ -2578,6 +2810,27 @@ solution:
                         "constraints": {
                           "mode": {
                             "const": "ANALOG"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "mco2": {
+                    "needs": [
+                      {
+                        "needType": "need.pinout.signals",
+                        "projectUri": "cube:e083f389-ecca-4928-b0cd-6f549c28d12d/221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+                        "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:RCC@2.1.0#HAL CORE Init GPIO and RCC",
+                        "componentInstanceId": "abca66f8-09d5-4866-9ba0-0b2ff018ef22",
+                        "selector": "MCO2",
+                        "id": "cbaf68c8-0fac-43c2-836a-af64199d00c0",
+                        "owner": "RCC",
+                        "constraints": {
+                          "mode": {
+                            "const": "ALTERNATE"
+                          },
+                          "output_type": {
+                            "const": "PUSHPULL"
                           }
                         }
                       }
@@ -2766,7 +3019,7 @@ solution:
               "code_generation": {
                 "optim_enable": true,
                 "strategy": "HW",
-                "exti_callback_user_data": false
+                "exti_callback_user_data": true
               },
               "debug": {
                 "assert_dbg_param": false,
@@ -3432,6 +3685,41 @@ solution:
               },
               "pins": [
                 {
+                  "_foreignKey": "PA2",
+                  "basic": {
+                    "mode": "OUTPUT",
+                    "pull": "NO",
+                    "enable_exti": false,
+                    "output_active_state": "SET",
+                    "output_init_state": "RESET",
+                    "output_type": "OPENDRAIN",
+                    "speed": "LOW"
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PA3",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": true,
+                    "exti_config": {
+                      "needs": [
+                        {
+                          "needType": "need.exti.lines",
+                          "projectUri": "cube:e083f389-ecca-4928-b0cd-6f549c28d12d/221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+                          "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:GPIO@2.1.0#HAL GPIO Init",
+                          "componentInstanceId": "5eb90aff-d6fe-4994-81d0-43341b0f3f3c",
+                          "selector": "*",
+                          "id": "1bb75c24-4a15-4df6-bded-b5bd91bf4cc6",
+                          "owner": "PA3"
+                        }
+                      ]
+                    }
+                  },
+                  "label_name": []
+                },
+                {
                   "_foreignKey": "PA4",
                   "basic": {
                     "mode": "INPUT",
@@ -3455,6 +3743,19 @@ solution:
                     "mode": "INPUT",
                     "pull": "NO",
                     "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PB7",
+                  "basic": {
+                    "mode": "OUTPUT",
+                    "pull": "NO",
+                    "enable_exti": false,
+                    "output_active_state": "SET",
+                    "output_init_state": "RESET",
+                    "output_type": "PUSHPULL",
+                    "speed": "LOW"
                   },
                   "label_name": []
                 },
@@ -3811,6 +4112,56 @@ solution:
               "speed": "LOW"
             }
           }
+        },
+        {
+          "index": 16,
+          "needId": "cbaf68c8-0fac-43c2-836a-af64199d00c0",
+          "rootId": "abca66f8-09d5-4866-9ba0-0b2ff018ef22",
+          "needType": "need.pinout.signals",
+          "parentId": "abca66f8-09d5-4866-9ba0-0b2ff018ef22",
+          "settings": {
+            "label_name": [],
+            "basic": {
+              "mode": "ALTERNATE",
+              "pull": "NO",
+              "enable_exti": false,
+              "output_type": "PUSHPULL",
+              "speed": "LOW"
+            }
+          }
+        }
+      ],
+      "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32 LL:EXTI@2.1.0#LL": [
+        {
+          "index": 17,
+          "needId": "1bb75c24-4a15-4df6-bded-b5bd91bf4cc6",
+          "rootId": "5eb90aff-d6fe-4994-81d0-43341b0f3f3c",
+          "needType": "need.exti.lines",
+          "parentId": "5eb90aff-d6fe-4994-81d0-43341b0f3f3c",
+          "settings": {
+            "basic": {
+              "mode": "NONE",
+              "trigger_detection": "RISING",
+              "interruption": {
+                "enable_interruption": true,
+                "irq_handler_generation": true,
+                "nvic": {
+                  "needs": [
+                    {
+                      "needType": "need.interrupt.lines",
+                      "projectUri": "cube:e083f389-ecca-4928-b0cd-6f549c28d12d/221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+                      "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32 LL:EXTI@2.1.0#LL",
+                      "componentInstanceId": "5eb90aff-d6fe-4994-81d0-43341b0f3f3c",
+                      "selector": "*",
+                      "id": "e211552d-76d4-47fc-a01a-068fc7dadd8a",
+                      "owner": "EXTI3"
+                    }
+                  ]
+                }
+              }
+            },
+            "labels": []
+          }
         }
       ]
     },
@@ -4082,6 +4433,7 @@ project:
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:RCC@2.1.0
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:SPI@2.1.0
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:System@2.1.0
+    - component: STMicroelectronics::Device:STM32CubeMX2 Config:TIM@2.1.0
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:UART@2.1.0
     - component: STMicroelectronics::Utility:STM32CubeMX2 Config:syscalls@1.0.0
 """
