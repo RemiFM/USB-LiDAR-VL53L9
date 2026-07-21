@@ -1,0 +1,170 @@
+(footprint "Solder_Jumper_0603"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "resistor")
+	(property "Reference" "REF**"
+		(at 0 -1.43 0)
+		(layer "F.SilkS")
+		(uuid "173b22e5-b6c6-4305-b64d-1f90d8cd9502")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Solder_Jumper_0603"
+		(at 0 1.43 0)
+		(layer "F.Fab")
+		(uuid "69b21407-ce27-4278-8999-071b3f46b946")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5fd7968a-c8e3-4bda-8a50-7fbd17233941")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a553271-72c6-44d4-8202-48b1896be7fd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5721e6fa-1fc9-4532-aef3-b4f12d4a02ff")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom dnp)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.225 -0.5)
+		(end 1.225 0.5)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "7e0c34ad-2151-477c-bd29-4525d8d97b40")
+	)
+	(fp_line
+		(start -0.237258 -0.625)
+		(end 0.237258 -0.625)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "68968a04-69e1-4835-b373-48e5b7389d26")
+	)
+	(fp_line
+		(start -0.237258 0.625)
+		(end 0.237258 0.625)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c56bfb2c-f3cd-43dc-8f25-cdf55451af90")
+	)
+	(fp_rect
+		(start -1.48 -0.73)
+		(end 1.48 0.73)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "93f7a96a-5f74-4b9f-99d0-c8a46f7c583d")
+	)
+	(fp_rect
+		(start -0.8 -0.4125)
+		(end 0.8 0.4125)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1b446918-3ed0-4de9-b6c4-af2795392bf0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "ec9ad518-33e9-49fd-94ea-e198ec7b687c")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at -0.824992 0.000005)
+		(size 0.799984 0.99999)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.400008 0.499995) (xy -0.400008 -0.500005) (xy 0.599992 -0.500005) (xy 1.099992 -0.000005)
+					(xy 0.599992 0.499995)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "2b203be1-1775-4497-b37d-c97561f6ca8c")
+	)
+	(pad "2" smd custom
+		(at 0.9875 0)
+		(size 0.475 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.2375 -0.5) (xy -0.9125 -0.5) (xy -0.4125 0) (xy -0.9125 0.5) (xy 0.2375 0.5)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "1f4399e8-1ae2-4e0c-b0d4-b82bb217822c")
+	)
+	(embedded_fonts no)
+)

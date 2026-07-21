@@ -5,6 +5,129 @@
 	(uuid "2f7de228-ef72-4311-8f0e-8ee9d2e2d401")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2769,6 +2892,12 @@
 		(uuid "0016f339-9e94-47e1-8f59-b631fa109dbf")
 	)
 	(junction
+		(at 44.45 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05eff5d5-578c-4256-ae32-bf46bd551aa7")
+	)
+	(junction
 		(at 179.07 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2931,6 +3060,12 @@
 		(uuid "87768e23-dad6-4ee8-a07c-3eb6489ce479")
 	)
 	(junction
+		(at 175.26 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "899fa5f9-2cb1-4949-85c4-6a20f7fd4c1e")
+	)
+	(junction
 		(at 86.36 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2985,6 +3120,12 @@
 		(uuid "b1cdef9e-83ab-4a3e-9d6d-ca09ec9cade1")
 	)
 	(junction
+		(at 93.98 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6218983-04e2-4edf-bb65-e67fc0d1f6e6")
+	)
+	(junction
 		(at 135.89 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2995,6 +3136,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bab8e66e-9161-4b5f-a574-5fb10e681bdd")
+	)
+	(junction
+		(at 256.54 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd5917e3-ec88-4a69-b66c-c0e83fef5877")
 	)
 	(junction
 		(at 58.42 46.99)
@@ -3162,6 +3309,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 135.89) (xy 274.32 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d51d8c5-5d03-46b6-bee5-57422aedda4f")
+	)
+	(wire
+		(pts
 			(xy 133.35 81.28) (xy 133.35 83.82)
 		)
 		(stroke
@@ -3199,6 +3356,16 @@
 			(type default)
 		)
 		(uuid "112d3745-bd00-46c5-8098-10de4a851264")
+	)
+	(wire
+		(pts
+			(xy 175.26 135.89) (xy 180.34 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "120b428f-87a4-4009-9635-2c2a5fe0f320")
 	)
 	(wire
 		(pts
@@ -3344,6 +3511,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 167.64) (xy 59.69 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b827be4-4b62-4c9a-93a6-37fcc984c39a")
+	)
+	(wire
+		(pts
 			(xy 49.53 36.83) (xy 49.53 35.56)
 		)
 		(stroke
@@ -3455,7 +3632,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 135.89) (xy 172.72 135.89)
+			(xy 167.64 135.89) (xy 175.26 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3626,6 +3803,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 135.89) (xy 175.26 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c9753fc-2c43-4e70-96c5-af7de8b4608b")
+	)
+	(wire
+		(pts
 			(xy 222.25 135.89) (xy 229.87 135.89)
 		)
 		(stroke
@@ -3636,7 +3823,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 135.89) (xy 267.97 135.89)
+			(xy 250.19 135.89) (xy 256.54 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3863,6 +4050,16 @@
 			(type default)
 		)
 		(uuid "6a669cce-b020-42b4-9053-835bbe95bae6")
+	)
+	(wire
+		(pts
+			(xy 256.54 135.89) (xy 256.54 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b65c6a9-1644-446a-9709-2a736904b5d0")
 	)
 	(wire
 		(pts
@@ -4527,6 +4724,16 @@
 		)
 		(uuid "c457d348-4cfa-4223-9e66-43777c5ef79c")
 	)
+	(wire
+		(pts
+			(xy 44.45 165.1) (xy 44.45 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c767867d-7874-45cb-be1f-7f4194559aed")
+	)
 	(polyline
 		(pts
 			(xy 77.47 134.62) (xy 78.74 133.35)
@@ -4771,7 +4978,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 167.64) (xy 59.69 167.64)
+			(xy 39.37 167.64) (xy 44.45 167.64)
 		)
 		(stroke
 			(width 0)
@@ -5040,7 +5247,7 @@
 		(uuid "cf808511-69ef-4ae8-8be4-5b28ee225874")
 	)
 	(label "LIDAR_SHDN_1V8"
-		(at 267.97 135.89 180)
+		(at 274.32 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5062,7 +5269,7 @@
 	)
 	(hierarchical_label "LIDAR_CLK"
 		(shape input)
-		(at 49.53 167.64 180)
+		(at 39.37 167.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5073,7 +5280,7 @@
 	)
 	(hierarchical_label "LIDAR_INTR"
 		(shape output)
-		(at 172.72 135.89 0)
+		(at 180.34 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6569,6 +6776,117 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 44.45 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "3a191337-478d-4b97-9371-f2b10ac27ef1")
+		(property "Reference" "TP7"
+			(at 44.45 159.766 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LIDAR_CLK"
+			(at 45.7199 160.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 49.53 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 44.45 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key" ""
+			(at 44.45 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SKU" ""
+			(at 44.45 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 44.45 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f28bf9a-3a54-4e94-8fff-f403e5695e66")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/89073032-b5a9-4994-931e-998ef2659408"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 81.28 153.67 270)
 		(mirror x)
@@ -7617,6 +7935,117 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 256.54 137.16 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "61608e36-be4d-4fb8-9753-333dc83dc775")
+		(property "Reference" "TP8"
+			(at 256.54 142.748 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LIDAR_SHDN_1V8"
+			(at 255.2701 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 251.46 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 256.54 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key" ""
+			(at 256.54 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SKU" ""
+			(at 256.54 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 256.54 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d153f34-cb9f-4204-80ff-f191d4db896d")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/89073032-b5a9-4994-931e-998ef2659408"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 213.36 35.56 0)
 		(unit 1)
@@ -8221,6 +8650,117 @@
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/89073032-b5a9-4994-931e-998ef2659408"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 175.26 139.7 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "7e3861d1-d40b-4366-b27d-9b27c701c645")
+		(property "Reference" "TP6"
+			(at 175.26 145.288 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LIDAR_INTR"
+			(at 173.9901 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 170.18 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 175.26 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key" ""
+			(at 175.26 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SKU" ""
+			(at 175.26 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 175.26 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1fb7468-89b5-4c94-874a-ea91e017fffe")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/89073032-b5a9-4994-931e-998ef2659408"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -10445,6 +10985,118 @@
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/89073032-b5a9-4994-931e-998ef2659408"
 					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 93.98 105.41 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "c5882ffc-cb2e-46e3-b97f-b9b80b5b9629")
+		(property "Reference" "TP5"
+			(at 98.298 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LIDAR_SYNC_1V8"
+			(at 99.06 106.6799 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 93.98 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 93.98 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key" ""
+			(at 93.98 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SKU" ""
+			(at 93.98 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 93.98 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1cee4af-6dfc-433a-a299-ad0d0d865d6d")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/89073032-b5a9-4994-931e-998ef2659408"
+					(reference "TP5")
 					(unit 1)
 				)
 			)

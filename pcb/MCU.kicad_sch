@@ -5,6 +5,129 @@
 	(uuid "7f6e6738-e9c4-4ef9-9ff9-d8b835e9def3")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x06"
 			(pin_names
 				(offset 1.016)
@@ -2644,307 +2767,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Transistor_FET:Q_NMOS_GSD"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_GSD"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, gate/source/drain"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_NMOS_GSD_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NMOS_GSD_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5663,22 +5485,9 @@
 		)
 		(uuid "a080f9ea-4719-4da8-b7d0-67177f65defd")
 	)
-	(text "OPEN DRAIN\nGPIO OUT"
-		(exclude_from_sim no)
-		(at 147.574 134.874 0)
-		(effects
-			(font
-				(face "Ubuntu")
-				(size 1.905 1.905)
-				(bold yes)
-				(color 72 72 72 1)
-			)
-		)
-		(uuid "c255d8bd-d67e-4b8b-a698-3a813e635fe3")
-	)
 	(text "IO CONNECTOR"
 		(exclude_from_sim no)
-		(at 249.682 113.03 0)
+		(at 247.65 113.03 0)
 		(effects
 			(font
 				(face "Ubuntu")
@@ -5738,6 +5547,28 @@
 		)
 		(uuid "0c56c70c-99d1-495d-972d-1c40c2965d18")
 	)
+	(text_box "+5V POWER INPUT\nDO NOT CONNECT TOGETHER WITH USB"
+		(exclude_from_sim no)
+		(at 254 91.4401 0)
+		(size 22.86 8.8899)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 194 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "25a0afaa-c5b9-4b1c-b3cf-e63e0fffa2b3")
+	)
 	(text_box "Use with 0.5\" pogo clamp fixture"
 		(exclude_from_sim no)
 		(at 175.006 110.998 0)
@@ -5763,7 +5594,7 @@
 	)
 	(text_box "CAN, UART, Trigger & Sync"
 		(exclude_from_sim no)
-		(at 236.982 112.014 0)
+		(at 234.95 112.014 0)
 		(size 25.4 6.0336)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -5863,6 +5694,12 @@
 		(uuid "49e9d021-3e74-4b89-a301-ff32cc5e20a1")
 	)
 	(junction
+		(at 191.77 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d0923b1-50d6-4646-97c9-0f554f65d572")
+	)
+	(junction
 		(at 53.34 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5905,12 +5742,6 @@
 		(uuid "7a53d3df-fcb9-42ba-9ac7-6f9c447e2e03")
 	)
 	(junction
-		(at 154.94 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ada1f5d-b284-461c-bca3-15ca05b1544d")
-	)
-	(junction
 		(at 237.49 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5939,6 +5770,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a98d043c-d5e7-4cdc-a107-8d818bdeaa4c")
+	)
+	(junction
+		(at 265.43 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acac57c7-a497-4a62-b8a9-810237ca0dee")
 	)
 	(junction
 		(at 55.88 110.49)
@@ -5981,12 +5818,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4d4d21c-0674-4757-82af-e14ad41195f1")
-	)
-	(junction
-		(at 139.7 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4dfd8a3-7ec5-400c-bdda-9a2911e594ee")
 	)
 	(junction
 		(at 187.96 139.7)
@@ -6037,6 +5868,10 @@
 		(uuid "753c6bba-c3e8-4ccd-9384-d2c264013fdf")
 	)
 	(no_connect
+		(at 119.38 50.8)
+		(uuid "87ad004c-8da5-419d-930b-8a0420ca86f3")
+	)
+	(no_connect
 		(at 119.38 81.28)
 		(uuid "981a3395-7e7c-497b-926d-0e8ed3fe9d71")
 	)
@@ -6047,16 +5882,6 @@
 	(no_connect
 		(at 256.54 142.24)
 		(uuid "c490b9d7-0553-467e-9816-ad685ac04b5d")
-	)
-	(wire
-		(pts
-			(xy 138.43 157.48) (xy 139.7 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00a15abc-4619-4e8c-9226-85078eaba339")
 	)
 	(wire
 		(pts
@@ -6100,6 +5925,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 121.92) (xy 266.7 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "033f09bf-e60c-49b0-af7e-44ba4e79659a")
+	)
+	(wire
+		(pts
 			(xy 49.53 100.33) (xy 55.88 100.33)
 		)
 		(stroke
@@ -6117,16 +5952,6 @@
 			(type default)
 		)
 		(uuid "03e6825d-17ea-425c-bde3-8782631dd360")
-	)
-	(wire
-		(pts
-			(xy 46.99 57.15) (xy 86.36 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0685d805-1b04-47e5-9bda-075386ec7cef")
 	)
 	(wire
 		(pts
@@ -6330,16 +6155,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 149.86) (xy 148.59 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d7ae728-9836-4680-941a-16a327ac9b75")
-	)
-	(wire
-		(pts
 			(xy 176.53 87.63) (xy 180.34 87.63)
 		)
 		(stroke
@@ -6537,16 +6352,6 @@
 			(type default)
 		)
 		(uuid "3e7559cd-9f5e-452b-8d24-53f48ea53971")
-	)
-	(wire
-		(pts
-			(xy 130.81 50.8) (xy 119.38 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f68d817-ee56-4102-920e-80393143e201")
 	)
 	(wire
 		(pts
@@ -6850,16 +6655,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 162.56) (xy 148.59 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f7399e9-2581-4dc4-97ac-9e8832bbde08")
-	)
-	(wire
-		(pts
 			(xy 43.18 73.66) (xy 43.18 81.28)
 		)
 		(stroke
@@ -6900,6 +6695,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 107.95) (xy 265.43 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7835843e-9ff8-4238-b471-bf7d6d31b631")
+	)
+	(wire
+		(pts
 			(xy 63.5 49.53) (xy 66.04 49.53)
 		)
 		(stroke
@@ -6917,16 +6722,6 @@
 			(type default)
 		)
 		(uuid "7ac5073d-afb4-4322-a205-b00b0219e730")
-	)
-	(wire
-		(pts
-			(xy 166.37 149.86) (xy 154.94 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b7eac06-dd02-4450-86aa-fef42bf1ccda")
 	)
 	(wire
 		(pts
@@ -7050,16 +6845,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 153.67) (xy 139.7 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92a9696e-2d00-4e80-9e3d-ad8be25ea3bb")
-	)
-	(wire
-		(pts
 			(xy 71.12 83.82) (xy 86.36 83.82)
 		)
 		(stroke
@@ -7090,16 +6875,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 121.92) (xy 266.7 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99b89f41-c845-496b-b220-84fc7ff336ce")
-	)
-	(wire
-		(pts
 			(xy 74.93 86.36) (xy 86.36 86.36)
 		)
 		(stroke
@@ -7117,16 +6892,6 @@
 			(type default)
 		)
 		(uuid "9adb74d6-c066-49b1-bab2-5c77ed11b344")
-	)
-	(wire
-		(pts
-			(xy 119.38 157.48) (xy 130.81 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c9dd58d-1677-4da3-adf6-7142afbbedb8")
 	)
 	(wire
 		(pts
@@ -7400,16 +7165,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 144.78) (xy 139.7 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c06d0ca7-c87b-4b1c-879f-4d871d0f0ef3")
-	)
-	(wire
-		(pts
 			(xy 92.71 144.78) (xy 101.6 144.78)
 		)
 		(stroke
@@ -7490,6 +7245,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 113.03) (xy 278.13 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb269e89-70fd-4919-85f1-2c617f4f7898")
+	)
+	(wire
+		(pts
 			(xy 85.09 144.78) (xy 85.09 154.94)
 		)
 		(stroke
@@ -7497,6 +7262,16 @@
 			(type default)
 		)
 		(uuid "cb96f45e-1fa1-4fe7-9815-4705c16ec60e")
+	)
+	(wire
+		(pts
+			(xy 275.59 113.03) (xy 278.13 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce69c15c-0873-4336-ad91-0014a57d4e2a")
 	)
 	(wire
 		(pts
@@ -7680,16 +7455,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 157.48) (xy 140.97 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df238b2e-082b-4de6-8f03-b3eeb78aba46")
-	)
-	(wire
-		(pts
 			(xy 55.88 100.33) (xy 62.23 100.33)
 		)
 		(stroke
@@ -7800,7 +7565,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 57.15) (xy 35.56 57.15)
+			(xy 35.56 57.15) (xy 86.36 57.15)
 		)
 		(stroke
 			(width 0)
@@ -7870,6 +7635,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 113.03) (xy 267.97 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef1b1e45-9ff5-43a8-81e3-c85a3bf45de1")
+	)
+	(wire
+		(pts
 			(xy 74.93 78.74) (xy 86.36 78.74)
 		)
 		(stroke
@@ -7910,16 +7685,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 149.86) (xy 154.94 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f11cce64-98a2-4ebe-ad74-cf56c8ffb726")
-	)
-	(wire
-		(pts
 			(xy 49.53 109.22) (xy 49.53 110.49)
 		)
 		(stroke
@@ -7940,16 +7705,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 149.86) (xy 148.59 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2cd590d-ac66-4a8f-8057-74cb35169df4")
-	)
-	(wire
-		(pts
 			(xy 85.09 144.78) (xy 92.71 144.78)
 		)
 		(stroke
@@ -7967,16 +7722,6 @@
 			(type default)
 		)
 		(uuid "f690f36f-0e96-47ec-893e-0c027c6a8468")
-	)
-	(wire
-		(pts
-			(xy 154.94 163.83) (xy 154.94 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6a57147-bc0b-45c0-a5f9-0a82fa9f1de3")
 	)
 	(wire
 		(pts
@@ -8028,6 +7773,16 @@
 		)
 		(uuid "ff78d036-bd1e-40e7-a768-1fee9631c8fb")
 	)
+	(wire
+		(pts
+			(xy 265.43 113.03) (xy 265.43 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffd65ef3-3829-4262-93e2-4bbe2afcae39")
+	)
 	(label "CAN_H"
 		(at 110.49 167.64 180)
 		(effects
@@ -8067,16 +7822,6 @@
 			(justify left bottom)
 		)
 		(uuid "1322ed73-331b-4b9c-a2ed-360b08d9ddb6")
-	)
-	(label "GPIO_OUT'"
-		(at 119.38 157.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a04b25f-02f2-4ef5-9735-fc212cf2be35")
 	)
 	(label "CAN_TX"
 		(at 74.93 81.28 0)
@@ -8158,16 +7903,6 @@
 		)
 		(uuid "5d75e713-c471-449c-8993-df14b540146c")
 	)
-	(label "GPIO_OUT"
-		(at 166.37 149.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "61df4ef4-dc80-4830-b344-526e569a77c0")
-	)
 	(label "USB'_D+"
 		(at 218.44 64.77 0)
 		(effects
@@ -8187,16 +7922,6 @@
 			(justify left bottom)
 		)
 		(uuid "6381748f-e634-4f15-b980-f6b6658d79d1")
-	)
-	(label "PH0'"
-		(at 35.56 64.77 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "71b1785d-a5bc-493f-866c-3a39182149eb")
 	)
 	(label "SWDCLK"
 		(at 130.81 78.74 180)
@@ -8247,16 +7972,6 @@
 			(justify left bottom)
 		)
 		(uuid "a0191633-6889-4039-9718-03af74f9e5a2")
-	)
-	(label "GPIO_OUT'"
-		(at 130.81 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a19a11ee-469c-4c87-978a-3b7c24bfd7af")
 	)
 	(label "SWDIO"
 		(at 179.07 132.08 0)
@@ -8317,16 +8032,6 @@
 			(justify left bottom)
 		)
 		(uuid "e40681e7-1adc-4ff0-87f1-5c55dc7477e2")
-	)
-	(label "GPIO_OUT"
-		(at 256.54 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e4ecc42f-f996-449c-8bfd-ac47ef0ca54f")
 	)
 	(label "CAN_L"
 		(at 110.49 144.78 180)
@@ -9036,6 +8741,118 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 250.19 31.75 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "0f65735a-075c-487a-a328-80ada2da530d")
+		(property "Reference" "TP9"
+			(at 254.508 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V"
+			(at 255.27 33.0199 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 250.19 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test Point"
+			(at 250.19 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key" ""
+			(at 250.19 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SKU" ""
+			(at 250.19 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 250.19 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "15387df9-5ca3-43e7-92de-645ef383fd37")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 237.49 43.18 0)
 		(unit 1)
@@ -9629,119 +9446,6 @@
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
 					(reference "#PWR0100")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 139.7 149.86 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1d0be5fb-29b3-41cb-b457-ceb1a5572243")
-		(property "Reference" "R19"
-			(at 143.256 148.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 143.256 150.876 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 141.478 149.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 139.7 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 10K OHM 1% 1/10W 0603"
-			(at 139.7 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key" "311-10.0KHRCT-ND"
-			(at 139.7 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SKU" "RC0603FR-0710KL"
-			(at 139.7 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 139.7 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7718d51d-0021-4852-97c1-80e2fa0ade83")
-		)
-		(pin "2"
-			(uuid "2a1545c7-7f6d-4cd1-a690-1fd24fe72f35")
-		)
-		(instances
-			(project "USB-LiDAR-VL53L9"
-				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
-					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -10550,121 +10254,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
-		(at 154.94 157.48 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a2d8e53-18f0-49aa-8a73-71987d7136b9")
-		(property "Reference" "D8"
-			(at 157.48 156.2099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DF2S30FS"
-			(at 157.48 158.7499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
-			(at 154.94 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=11156&prodName=DF2S30FS"
-			(at 154.94 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "TVS DIODE 23VWM SOD923"
-			(at 154.94 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key" "DF2S30FSL3MCT-ND"
-			(at 154.94 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SKU" "DF2S30FS,L3M"
-			(at 154.94 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Toshiba Semiconductor and Storage"
-			(at 154.94 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3d5fe706-1f03-4d9e-ae37-416611a97431")
-		)
-		(pin "1"
-			(uuid "cc68d06c-b7c0-41bb-866a-22f0736765a5")
-		)
-		(instances
-			(project "USB-LiDAR-VL53L9"
-				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 102.87 30.48 0)
 		(unit 1)
@@ -11088,8 +10677,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GSD")
-		(at 146.05 157.48 0)
+		(lib_id "power:+5V")
+		(at 265.43 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11097,31 +10686,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4898a831-2ebd-47fc-9c43-717c5d5fb367")
-		(property "Reference" "Q1"
-			(at 145.034 161.544 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "T2N7002BK"
-			(at 145.034 164.084 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 151.13 154.94 0)
+		(uuid "43a8217c-1a06-4d6a-9c3f-32b2b85aba07")
+		(property "Reference" "#PWR089"
+			(at 265.43 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11131,8 +10698,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=30376&prodName=T2N7002BK"
-			(at 146.05 157.48 0)
+		(property "Value" "+5V"
+			(at 265.43 103.632 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11142,8 +10719,8 @@
 				)
 			)
 		)
-		(property "Description" "MOSFET N-CH 60V 400MA SOT23-3"
-			(at 146.05 157.48 0)
+		(property "Datasheet" ""
+			(at 265.43 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11153,30 +10730,8 @@
 				)
 			)
 		)
-		(property "Digi-Key" "T2N7002BKLMCT-ND"
-			(at 146.05 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SKU" "T2N7002BK,LM"
-			(at 146.05 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Toshiba Semiconductor and Storage"
-			(at 146.05 157.48 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 265.43 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11187,18 +10742,124 @@
 			)
 		)
 		(pin "1"
-			(uuid "2d09467b-1e55-446e-acd4-2aa32d412c40")
-		)
-		(pin "3"
-			(uuid "ea2b0632-1e2a-472f-bc76-e0ff2202a60d")
-		)
-		(pin "2"
-			(uuid "b348ef51-c2f6-45b6-8317-7e95c8fb395a")
+			(uuid "05847aa4-b007-4657-a4bc-cbfe0ed5e6b4")
 		)
 		(instances
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
-					(reference "Q1")
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 191.77 85.09 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4b19c4d1-86f2-4aff-a569-8df6a0a76ec2")
+		(property "Reference" "TP10"
+			(at 196.088 85.09 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 86.3599 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "USB-LiDAR-VL53L9:KOA_RCWCTE_Test_Point"
+			(at 191.77 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RC.pdf"
+			(at 191.77 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PC TEST POINT"
+			(at 191.77 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key" "2019-RCWCTECT-ND"
+			(at 191.77 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SKU" "RCWCTE"
+			(at 191.77 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 191.77 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6ff5d099-4bae-451b-bcfb-f06b75f642e3")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -12908,6 +12569,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener")
+		(at 271.78 113.03 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7482f8e3-a3bc-46a7-b49b-88a8611c76c7")
+		(property "Reference" "D7"
+			(at 271.78 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMF5.0A"
+			(at 271.78 110.236 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 271.78 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6808/SMF5.0A%20SOD-123FL.PDF"
+			(at 271.78 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "21.7A 9.2V 6.4V 5V SOD-123FL"
+			(at 271.78 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key" "5399-SMF5.0ACT-ND"
+			(at 271.78 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SKU" "SMF5.0A"
+			(at 271.78 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Shenzhen Slkormicro Semicon Co., Ltd."
+			(at 271.78 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "84417228-26ea-42a3-a295-455e05e07a76")
+		)
+		(pin "1"
+			(uuid "c9ac54c4-88a0-4ae3-9680-4bad9eec44f1")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 92.71 151.13 90)
 		(unit 1)
@@ -12942,7 +12716,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+		(property "Footprint" "USB-LiDAR-VL53L9:Solder_Jumper_0603"
 			(at 92.71 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -13881,195 +13655,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 139.7 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "92a41cf8-7b8e-43bf-bfe6-33c7fd507497")
-		(property "Reference" "#PWR098"
-			(at 139.7 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 139.7 140.462 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 139.7 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c544530b-96b3-4c60-a447-7e9acc7d1752")
-		)
-		(instances
-			(project "USB-LiDAR-VL53L9"
-				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
-					(reference "#PWR098")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 43.18 57.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9752f80a-80e1-4a66-be44-81966648e608")
-		(property "Reference" "R7"
-			(at 43.18 52.324 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 43.18 54.61 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 43.18 58.928 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 43.18 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
-			(at 43.18 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key" "311-0.0GRCT-ND"
-			(at 43.18 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SKU" "RC0603JR-070RL"
-			(at 43.18 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 43.18 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2d945087-39df-41ab-b940-0a3191ee429c")
-		)
-		(pin "2"
-			(uuid "0b735b9f-c2d2-41b5-9983-e7e5d9cf42e8")
-		)
-		(instances
-			(project "USB-LiDAR-VL53L9"
-				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 49.53 105.41 0)
 		(unit 1)
@@ -14178,119 +13763,6 @@
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 134.62 157.48 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9fc11c1a-92b6-4a79-bbd1-b12edf0db3de")
-		(property "Reference" "R18"
-			(at 134.62 154.94 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 134.62 160.02 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 134.62 155.702 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 134.62 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 100 OHM 1% 1/10W 0603"
-			(at 134.62 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key" "311-100HRCT-ND"
-			(at 134.62 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SKU" "RC0603FR-07100RL"
-			(at 134.62 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 134.62 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a09e72e2-b443-4d16-a224-d2fd014bc5b9")
-		)
-		(pin "2"
-			(uuid "224d7041-87a8-4c65-8156-835b8484833f")
-		)
-		(instances
-			(project "USB-LiDAR-VL53L9"
-				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
-					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -14621,160 +14093,6 @@
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
 					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 154.94 163.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ae509f70-4d02-408c-9504-00b693c19d3b")
-		(property "Reference" "#PWR0101"
-			(at 154.94 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 154.94 167.894 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a8aded9d-f687-43b5-8e95-eb8dcd426bc9")
-		)
-		(instances
-			(project "USB-LiDAR-VL53L9"
-				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 148.59 163.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b0fdd720-44eb-4166-9c88-c8eee5c51b36")
-		(property "Reference" "#PWR089"
-			(at 148.59 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.59 167.894 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0fae52b5-630b-4b76-ab5d-5bb0469725c1")
-		)
-		(instances
-			(project "USB-LiDAR-VL53L9"
-				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
-					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -15129,6 +14447,83 @@
 			(project "USB-LiDAR-VL53L9"
 				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 278.13 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c877c83d-d641-45a7-8c45-c3e972c0bc48")
+		(property "Reference" "#PWR098"
+			(at 278.13 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.13 119.634 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 278.13 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9308812a-f529-4e47-9132-85919a2718a4")
+		)
+		(instances
+			(project "USB-LiDAR-VL53L9"
+				(path "/f74f2218-c30e-45a2-93ff-09be1aef6a2e/3d29260a-8d7f-4119-a0e3-1d027e51dbb9"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
