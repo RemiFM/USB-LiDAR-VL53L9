@@ -9036,6 +9036,7 @@
 	(symbol
 		(lib_id "Device:C")
 		(at 213.36 69.85 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9045,7 +9046,7 @@
 		(dnp no)
 		(uuid "8e28a964-fe0c-4988-aead-53cf4e031601")
 		(property "Reference" "C14"
-			(at 216.408 68.58 0)
+			(at 210.312 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9056,7 +9057,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 216.408 71.12 0)
+			(at 210.312 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9067,7 +9068,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 214.3252 73.66 0)
+			(at 212.3948 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

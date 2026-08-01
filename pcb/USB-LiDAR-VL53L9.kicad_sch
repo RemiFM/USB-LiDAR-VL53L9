@@ -108,29 +108,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "TODO:\n[x] GND to SHIELD connection\n[x] LiDAR aux connections\n[x] Change MCU STM32C551 to STM32C552\n[x] CAN circuitry\n[x] JST GH connector for UART/CAN/TRIGGER/GPIO\n[x] Debug header (0.5\" single line?)\n[x] Finish CubeMX pinout\n[ ] Add testpoints"
-		(exclude_from_sim no)
-		(at 185.42 63.5 0)
-		(size 71.12 38.1)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Ubuntu")
-				(size 1.905 1.905)
-				(bold yes)
-				(color 72 72 72 1)
-			)
-			(justify left top)
-		)
-		(uuid "c7c4a701-db59-4e83-be18-8fa61d0099d2")
-	)
 	(wire
 		(pts
 			(xy 86.36 74.93) (xy 101.6 74.93)
