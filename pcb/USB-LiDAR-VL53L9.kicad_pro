@@ -167,7 +167,7 @@
         "min_track_width": 0.1,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -517,7 +517,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -684,7 +684,7 @@
         "uuid": "f74f2218-c30e-45a2-93ff-09be1aef6a2e"
       }
     ],
-    "used_designators": "#PWR44,TP2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

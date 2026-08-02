@@ -1,6 +1,6 @@
 # USB-C LiDAR Node (VL53L9)
 
-![Status](https://img.shields.io/badge/status-schematics_done_%E2%80%94_PCB_layout_in_progress-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-In_Manufacturing-blue?style=for-the-badge)
 
 <img src="doc/render.png" alt="PCB render" width="75%">
 
