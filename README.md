@@ -26,4 +26,4 @@ Per the VL53L9CX datasheet (DS14879, Table 2), the I3C interface is specified fo
 
 ## Mechanical Specs
 
-The PCB measures 34 × 34 mm and has 4× M3 mounting holes on a 20 mm square pitch, fitting small drone frame stacks.
+The PCB measures 34 × 30 mm and has 4× M3 mounting holes on a 20 mm square pitch, fitting small drone frame stacks.
