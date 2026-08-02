@@ -4118,10 +4118,6 @@
 		(uuid "87ad004c-8da5-419d-930b-8a0420ca86f3")
 	)
 	(no_connect
-		(at 119.38 81.28)
-		(uuid "981a3395-7e7c-497b-926d-0e8ed3fe9d71")
-	)
-	(no_connect
 		(at 203.2 74.93)
 		(uuid "a6fc4470-09b7-40e1-9243-5883dfdb29a1")
 	)
@@ -4727,6 +4723,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 53.34) (xy 119.38 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e74bb28-bc55-4a79-be05-978410adcdcb")
+	)
+	(wire
+		(pts
 			(xy 179.07 139.7) (xy 187.96 139.7)
 		)
 		(stroke
@@ -4967,6 +4973,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 81.28) (xy 119.38 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b41d66f2-4bae-4b22-a513-01ab25108b42")
+	)
+	(wire
+		(pts
 			(xy 204.47 64.77) (xy 204.47 67.31)
 		)
 		(stroke
@@ -5094,16 +5110,6 @@
 			(type default)
 		)
 		(uuid "cab7823c-aff8-4bc1-8b80-5e5365ef2a7a")
-	)
-	(wire
-		(pts
-			(xy 119.38 53.34) (xy 123.19 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf40d04a-fef9-446f-9d6f-9e77d0e826cb")
 	)
 	(wire
 		(pts
@@ -5710,7 +5716,7 @@
 	)
 	(hierarchical_label "LIDAR_INTR"
 		(shape input)
-		(at 123.19 53.34 0)
+		(at 121.92 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5718,6 +5724,17 @@
 			(justify left)
 		)
 		(uuid "49b3c52a-f533-47a9-a892-853a9ab638f1")
+	)
+	(hierarchical_label "LIDAR_SYNC"
+		(shape output)
+		(at 121.92 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f57f42c-0726-40ef-8116-2a69fd6dcf1c")
 	)
 	(hierarchical_label "LIDAR_SHDN"
 		(shape output)

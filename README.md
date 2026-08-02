@@ -4,7 +4,7 @@
 
 <img src="doc/render.png" alt="PCB render" width="75%">
 
-A compact and low-cost USB device with integrated LiDAR sensor and IMU. This hardware node packages STMicroelectronics' VL53L9 advanced direct Time-of-Flight (dToF) matrix LiDAR with a 6-axis IMU into a plug-and-play USB-C device, with an auxiliary CAN and UART connector for direct integration into existing robotics harnesses. Designed for mobile robotics, micro-UAVs, and academic SLAM research. The hardware is designed in KiCad 10.
+A compact and low-cost USB device with integrated LiDAR sensor and IMU. This hardware node packages STMicroelectronics' VL53L9 advanced direct Time-of-Flight (dToF) matrix LiDAR with a 6-axis IMU into a plug-and-play USB-C device. Designed for mobile robotics, micro-UAVs, and academic SLAM research. The hardware is designed in KiCad 10.
 
 ## System Architecture
 ![Block diagram showing VL53L9 LiDAR and LSM6DSV IMU connected via I3C to an STM32C55xx MCU, which interfaces to the host over USB Full-Speed](doc/block_diagram.png)
@@ -27,9 +27,3 @@ Per the VL53L9CX datasheet (DS14879, Table 2), the I3C interface is specified fo
 ## Mechanical Specs
 
 The PCB measures 34 × 34 mm and has 4× M3 mounting holes on a 20 mm square pitch, fitting small drone frame stacks.
-
-A 7-position JST GH expansion connector breaks out power and serial comms for integration into flight controller or robotics wiring harnesses without relying on USB:
-
-| Pin | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
-|---|---|---|---|---|---|---|---|
-| Signal | +5V | SYNC_IN | CAN_L | CAN_H | UART_RX | UART_TX | GND |

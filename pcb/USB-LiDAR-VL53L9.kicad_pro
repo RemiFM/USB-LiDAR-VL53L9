@@ -64,7 +64,7 @@
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 2,
-          "remove_islands": 1,
+          "remove_islands": 2,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -76,7 +76,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|141775000|98955000|8ead8787-ea48-474e-988b-57f872a164da|adda37eb-17a6-45f4-93c0-5c6a71bc4e0a",
+          "OK"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -679,7 +684,7 @@
         "uuid": "f74f2218-c30e-45a2-93ff-09be1aef6a2e"
       }
     ],
-    "used_designators": "TP2",
+    "used_designators": "#PWR44,TP2",
     "variants": []
   },
   "sheets": [
