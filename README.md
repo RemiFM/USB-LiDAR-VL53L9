@@ -2,7 +2,7 @@
 
 ![Status](https://img.shields.io/badge/status-In_Manufacturing-blue?style=for-the-badge)
 
-<img src="doc/render.png" alt="PCB render" width="75%">
+<img src="doc/render.png" alt="PCB render" width="90%">
 
 A compact and low-cost USB device with integrated LiDAR sensor and IMU. This hardware node packages STMicroelectronics' VL53L9 advanced direct Time-of-Flight (dToF) matrix LiDAR with a 6-axis IMU into a plug-and-play USB-C device. Designed for mobile robotics, micro-UAVs, and academic SLAM research. The hardware is designed in KiCad 10.
 
