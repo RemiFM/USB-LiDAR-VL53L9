@@ -601,33 +601,51 @@
         },
         {
           "group_by": false,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
           "show": true
         },
         {
           "group_by": true,
-          "label": "Value",
-          "name": "Value",
+          "label": "SKU",
+          "name": "SKU",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Digi-Key",
+          "name": "Digi-Key",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -640,24 +658,6 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "SKU",
-          "name": "SKU",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Digi-Key",
-          "name": "Digi-Key",
-          "show": true
         },
         {
           "group_by": false,
