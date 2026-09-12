@@ -2,8 +2,6 @@
 
 ![Status](https://img.shields.io/badge/status-Validation-yellow?style=for-the-badge)
 
-<img src="doc/render.png" alt="PCB render" width="60%">
-
 A compact and low-cost USB device with integrated LiDAR sensor and IMU. This hardware node packages STMicroelectronics' VL53L9 advanced direct Time-of-Flight (dToF) matrix LiDAR with a 6-axis IMU into a plug-and-play USB-C device. Designed for mobile robotics, micro-UAVs, and academic SLAM research. The hardware is designed in KiCad 10.
 
 ## System Architecture
@@ -28,7 +26,12 @@ Per the VL53L9CX datasheet (DS14879, Table 2), the I3C interface is specified fo
 
 The PCB measures 34 × 30 mm and has 4× M3 mounting holes on a 20 mm square pitch, fitting small drone frame stacks.
 
-## Assembled Unit
+## Render & Assembled Unit
 
-<img src="doc/assembly.jpg" alt="Assembled USB-LiDAR-VL53L9 PCB plugged into a USB cable, VL53L9CX laser active" width="90%">
+<table>
+<tr>
+<td><img src="doc/render.png" alt="PCB render" width="100%"></td>
+<td><img src="doc/assembly.jpg" alt="Assembled USB-LiDAR-VL53L9 PCB plugged into a USB cable, VL53L9CX laser active" width="100%"></td>
+</tr>
+</table>
 
