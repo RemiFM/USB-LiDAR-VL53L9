@@ -591,19 +591,19 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Reference",
           "name": "Reference",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Value",
           "name": "Value",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -613,7 +613,7 @@
         },
         {
           "group_by": true,
-          "label": "SKU",
+          "label": "MPN",
           "name": "SKU",
           "show": true
         },

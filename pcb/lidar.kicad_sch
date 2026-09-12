@@ -4797,8 +4797,30 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "HI-PERFORMANCE 2.3K ZONE 3D ALL"
 			(at 158.75 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 158.75 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SKU" "VL53L9CXV0VE/1"
+			(at 158.75 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
