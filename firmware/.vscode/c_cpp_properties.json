@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "compileCommands": "${workspaceFolder}/build/debug_GCC_STM32C552KEU6/compile_commands.json",
+            "intelliSenseMode": "linux-gcc-x64",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17"
+        }
+    ],
+    "version": 4
+}

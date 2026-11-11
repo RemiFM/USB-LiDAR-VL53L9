@@ -1,0 +1,33 @@
+diff --git a/hal/stm32c5xx_hal_i3c.c b/hal/stm32c5xx_hal_i3c.c
+index 262df37..d728582 100644
+--- a/hal/stm32c5xx_hal_i3c.c
++++ b/hal/stm32c5xx_hal_i3c.c
+@@ -3417,7 +3417,7 @@ hal_status_t HAL_I3C_CTRL_Transfer(hal_i3c_handle_t *hi3c, const hal_i3c_transfe
+ 
+   if (hal_status == HAL_OK)
+   {
+-    if ((hi3c->tx_count_byte != 0U) && (hi3c->rx_count_byte != 0U))
++    if ((hi3c->tx_count_byte != 0U) || (hi3c->rx_count_byte != 0U))
+     {
+       hal_status = HAL_ERROR;
+     }
+@@ -6852,7 +6852,7 @@ static void I3C_ReceiveByteTreatment(hal_i3c_handle_t *hi3c)
+   I3C_TypeDef *p_i3cx = I3C_GET_INSTANCE(hi3c);
+ 
+   /* Check RX FIFO not empty flag */
+-  while (LL_I3C_IsActiveFlag_RXFNE(p_i3cx) != 0U)
++  while ((hi3c->rx_count_byte > 0U) && (LL_I3C_IsActiveFlag_RXFNE(p_i3cx) != 0U))
+   {
+     *hi3c->p_rx_data = LL_I3C_ReceiveData8(p_i3cx);
+     hi3c->p_rx_data++;
+@@ -6946,7 +6946,9 @@ static void I3C_ControlDataTreatment(hal_i3c_handle_t *hi3c)
+   I3C_TypeDef *p_i3cx = I3C_GET_INSTANCE(hi3c);
+ 
+   /* Check if Control FIFO requests data */
+-  if (LL_I3C_IsActiveFlag_CFNF(p_i3cx) != 0U)
++  /* CFNF is a level flag: it can stay asserted after the last descriptor.
++     Do not read beyond the supplied control array or underflow the count. */
++  if ((hi3c->tc_count_word > 0U) && (LL_I3C_IsActiveFlag_CFNF(p_i3cx) != 0U))
+   {
+     LL_I3C_WriteControlWord(p_i3cx, *hi3c->p_tc_data);
+     hi3c->p_tc_data++;

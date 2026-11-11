@@ -1562,7 +1562,7 @@
 			(uuid "b72d0cec-a654-4b30-a2c7-53b601b3d58c")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d/STM32C551KEU6.stp"
+		(model "${KIPRJMOD}/3d/STM32C552KEU6.stp"
 			(offset
 				(xyz 0 0 0)
 			)
