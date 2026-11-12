@@ -1,0 +1,60 @@
+@import "tailwindcss";
+/* Don't scan static assets (e.g. the 5 MB board.glb) for class names. */
+@source not "../public";
+
+@layer components {
+  .btn {
+    @apply rounded border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-800 shadow-sm
+      hover:bg-slate-100 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-icon {
+    @apply inline-flex h-8 min-w-8 items-center justify-center px-1.5 py-0;
+  }
+  .btn-link-on {
+    @apply border-emerald-600 text-emerald-700 bg-emerald-50 hover:bg-emerald-100;
+  }
+  .btn-link-off {
+    @apply border-red-300 text-red-600 bg-red-50 hover:bg-red-100;
+  }
+  .btn-sm {
+    @apply px-2 py-1 text-xs;
+  }
+  .tab {
+    @apply rounded-md px-3 py-1 text-sm text-slate-600 hover:bg-slate-100 cursor-pointer;
+  }
+  .tab-active {
+    @apply bg-slate-100 font-semibold text-slate-900;
+  }
+  .btn-primary {
+    @apply border-sky-600 bg-sky-600 text-white hover:bg-sky-700;
+  }
+  .btn-active {
+    @apply border-red-600 bg-red-600 text-white hover:bg-red-700;
+  }
+  .btn-toggle.btn-on {
+    @apply border-emerald-600 bg-emerald-50 text-emerald-800 hover:bg-emerald-100;
+  }
+  .stat-group {
+    @apply grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 content-start;
+  }
+  .stat-group dt {
+    @apply text-slate-500;
+  }
+  .stat-group dd {
+    @apply font-mono text-right tabular-nums;
+  }
+  .stat-head {
+    @apply font-semibold !text-slate-700;
+  }
+  .panel {
+    @apply rounded-lg border border-slate-200 bg-white p-3 shadow-sm;
+  }
+  .panel-title {
+    @apply mb-2 text-sm font-semibold text-slate-700;
+  }
+}
+
+.uplot .u-legend {
+  color: #334155;
+  font-size: 12px;
+}

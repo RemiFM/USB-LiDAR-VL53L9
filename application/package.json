@@ -1,0 +1,27 @@
+{
+  "name": "usb-lidar-imu-viewer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "export-board": "kicad-cli pcb export glb -f --subst-models --include-soldermask --include-silkscreen --include-pads --user-origin 150x101.9mm -o public/models/board.glb ../pcb/USB-LiDAR-VL53L9.kicad_pcb",
+    "build-wasm": "node wasm/build.mjs"
+  },
+  "dependencies": {
+    "three": "0.187.0",
+    "uplot": "1.6.32"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.5",
+    "@types/three": "0.187.0",
+    "@types/w3c-web-serial": "1.0.9",
+    "@yowasp/clang": "22.0.0-git20542-10",
+    "tailwindcss": "4.3.5",
+    "typescript": "7.0.2",
+    "vite": "8.3.8"
+  }
+}

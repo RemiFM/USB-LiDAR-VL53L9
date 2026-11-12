@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USB LiDAR &amp; IMU Viewer</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 min-h-screen">
+    <header class="border-b border-slate-200 bg-white px-4 py-3 flex flex-wrap items-center gap-2 shadow-sm">
+      <h1 class="text-lg font-semibold mr-4">USB LiDAR &amp; IMU</h1>
+
+      <button id="btn-imu" class="btn btn-toggle" disabled title="IMU stream on/off">IMU</button>
+      <button id="btn-lidar" class="btn btn-toggle" disabled title="LiDAR stream on/off">LiDAR</button>
+
+      <span class="w-px h-6 bg-slate-200 mx-1"></span>
+      <button id="btn-record" class="btn btn-icon text-red-600" disabled title="Record (session .bin + IMU CSV)" aria-label="Record" data-icon="record"></button>
+      <label class="btn btn-icon" id="lbl-load" title="Load a recording (session-*.bin or imu-*.csv)" aria-label="Load recording">
+        <span data-icon="upload"></span><input id="file-load" type="file" accept=".bin,.csv,application/octet-stream,text/csv" class="hidden" />
+      </label>
+      <button id="btn-play" class="btn btn-icon" disabled title="Play the loaded recording" aria-label="Play" data-icon="play"></button>
+      <select id="sel-speed" class="btn" disabled>
+        <option value="0.25">0.25×</option>
+        <option value="0.5">0.5×</option>
+        <option value="1" selected>1×</option>
+        <option value="2">2×</option>
+        <option value="4">4×</option>
+      </select>
+      <progress id="prog-play" class="w-32 h-2 hidden" max="1" value="0"></progress>
+
+      <button id="btn-link" class="ml-auto btn btn-icon btn-link-off" title="Not connected: click to connect" aria-label="Connect" data-icon="unlink"></button>
+    </header>
+
+    <div id="unsupported" class="hidden m-4 p-3 rounded bg-red-50 text-red-800 border border-red-200 text-sm">
+      Web Serial is not available. Use Chrome or Edge, served from localhost (npm run dev).
+    </div>
+
+    <!-- Two rows, each sized by its tallest card:
+           row 1: LiDAR            | Orientation + Acceleration/Angular rate
+           row 2: Device console   | Stream
+         The LiDAR views and console log are absolutely positioned so their content never
+         grows a row; they fill whatever height the right-hand cards give them. -->
+    <main class="grid gap-4 p-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
+      <div class="panel flex flex-col min-w-0">
+        <div class="flex flex-wrap items-center gap-1 mb-2" role="tablist">
+          <h2 class="panel-title !mb-0 mr-3">LiDAR</h2>
+          <button class="tab" role="tab" data-lidar-tab="cloud">3D</button>
+          <button class="tab" role="tab" data-lidar-tab="depth">Depth map</button>
+          <button class="tab" role="tab" data-lidar-tab="top">Top view</button>
+          <span id="lidar-summary" class="ml-auto text-xs font-mono text-slate-500"></span>
+        </div>
+        <div class="relative flex-1 min-h-80 bg-slate-50 rounded border border-slate-200 overflow-hidden">
+          <div id="lidar-cloud" data-lidar-panel="cloud" class="absolute inset-0"></div>
+          <canvas id="lidar-depth" data-lidar-panel="depth" class="absolute inset-0 w-full h-full"></canvas>
+          <canvas id="lidar-top" data-lidar-panel="top" class="absolute inset-0 w-full h-full"></canvas>
+          <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 pointer-events-none">
+            <button id="btn-connect" class="btn btn-primary pointer-events-auto hidden">Connect</button>
+            <div id="lidar-overlay" class="text-sm text-slate-500"></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-2 text-sm">
+          <label class="flex items-center gap-1">Colour
+            <select id="sel-color" class="btn btn-sm">
+              <option value="depth">depth</option>
+              <option value="reflectance">reflectance</option>
+            </select>
+          </label>
+          <label class="flex items-center gap-1" title="Hide everything further away than this; the depth colour scale then runs from 0 to this distance">Max range
+            <select id="sel-range" class="btn btn-sm">
+              <option value="0">none</option>
+              <option value="500">0.5 m</option>
+              <option value="1000">1 m</option>
+              <option value="2000">2 m</option>
+              <option value="4000">4 m</option>
+              <option value="8000">8 m</option>
+            </select>
+          </label>
+          <label class="flex items-center gap-1" title="ST temporal noise reduction: smoother, slightly laggier">
+            <input id="chk-temporal" type="checkbox" /> Temporal filter
+          </label>
+          <label class="flex items-center gap-1" data-only="depth" title="Interpolate between zones (bilinear, valid zones only); off = one sharp cell per zone">
+            <input id="chk-smooth" type="checkbox" /> Smooth
+          </label>
+          <label class="flex items-center gap-1" data-only="cloud" title="Rotate the point cloud with the IMU orientation (floor stays horizontal)">
+            <input id="chk-level" type="checkbox" /> Level with IMU
+          </label>
+          <span class="flex items-center gap-1" title="Mirror the LiDAR image if it does not match the board. Check: an object at the board's +X side must appear at +X. Normally use none or both (both = sensor rotated 180°).">
+            <button id="btn-mirror-h" class="btn btn-icon btn-toggle" aria-pressed="false" title="Mirror horizontally" aria-label="Mirror horizontally" data-icon="flipH"></button>
+            <button id="btn-mirror-v" class="btn btn-icon btn-toggle" aria-pressed="false" title="Mirror vertically" aria-label="Mirror vertically" data-icon="flipV"></button>
+          </span>
+          <span class="ml-auto flex gap-2">
+            <button id="btn-cloud-view" class="btn btn-sm" data-only="cloud">Reset view</button>
+            <button id="btn-lidar-reinit" class="btn btn-sm" disabled title="Power-cycle and reconfigure the LiDAR (sends 'R')">Re-init LiDAR</button>
+          </span>
+        </div>
+      </div>
+
+      <section class="space-y-4 min-w-0">
+        <div class="panel">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <h2 class="panel-title !mb-0 mr-auto">Orientation</h2>
+            <button id="btn-view-reset" class="btn btn-sm" title="Restore the default camera after rotating/zooming with the mouse">Reset view</button>
+            <button id="btn-calibrate" class="btn btn-sm" disabled title="Keep the board still for 2 s">Calibrate gyro</button>
+            <button id="btn-reset" class="btn btn-sm" disabled title="Roll/pitch stay gravity-referenced; yaw is set back to 0">Reset yaw</button>
+          </div>
+          <div id="view-3d" class="h-72"></div>
+          <dl class="grid grid-cols-3 gap-2 mt-3 text-sm font-mono">
+            <div><dt class="text-slate-500">roll</dt><dd id="val-roll">–</dd></div>
+            <div><dt class="text-slate-500">pitch</dt><dd id="val-pitch">–</dd></div>
+            <div><dt class="text-slate-500">yaw <span class="font-sans text-xs" title="No magnetometer: yaw is relative to the last reset and slowly drifts">(relative)</span></dt><dd id="val-yaw">–</dd></div>
+          </dl>
+        </div>
+
+        <div class="panel">
+          <div class="flex items-center gap-1 mb-2" role="tablist">
+            <button class="tab tab-active" role="tab" aria-selected="true" data-tab="accel">Acceleration</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="gyro">Angular rate</button>
+            <span id="tab-note" class="ml-auto text-xs text-slate-500">board frame, mg</span>
+          </div>
+          <div id="plot-accel" data-tab-panel="accel"></div>
+          <div id="plot-gyro" data-tab-panel="gyro" class="hidden"></div>
+        </div>
+      </section>
+
+      <div class="panel flex flex-col min-w-0">
+        <h2 class="panel-title">Device console</h2>
+        <div class="relative flex-1 min-h-32">
+          <div id="console" class="absolute inset-0 overflow-y-auto font-mono text-xs leading-5 bg-slate-50 border border-slate-200 rounded p-2"></div>
+        </div>
+        <form id="form-send" class="mt-2 flex gap-2">
+          <input id="input-send" class="flex-1 bg-white border border-slate-300 rounded px-2 py-1 font-mono text-sm"
+                 placeholder="Send command characters (V info, C calibration, R re-init LiDAR, U re-init IMU)" autocomplete="off" disabled />
+          <button class="btn" id="btn-send" disabled>Send</button>
+        </form>
+      </div>
+
+      <div class="panel min-w-0">
+        <h2 class="panel-title">Stream</h2>
+        <!-- Two independent columns: each group sits directly under the previous one. -->
+        <div class="grid grid-cols-2 gap-x-6 text-sm">
+          <div class="space-y-3 min-w-0">
+          <dl class="stat-group">
+            <dt class="stat-head">USB</dt><dd></dd>
+            <dt>throughput</dt><dd id="st-usb-rate">–</dd>
+            <dt>packets</dt><dd id="st-usb-packets">–</dd>
+            <dt>CRC err / gaps</dt><dd id="st-usb-errors">–</dd>
+            <dt>recording</dt><dd id="st-rec">–</dd>
+          </dl>
+          <dl class="stat-group">
+            <dt class="stat-head">IMU</dt><dd></dd>
+            <dt>rate</dt><dd id="val-rate">–</dd>
+            <dt>samples / dropped</dt><dd id="val-count">–</dd>
+            <dt>|a|</dt><dd id="val-anorm">–</dd>
+            <dt>temperature</dt><dd id="val-temp">–</dd>
+            <dt>gyro bias [mdps]</dt><dd id="val-bias">–</dd>
+          </dl>
+          </div>
+          <div class="space-y-3 min-w-0">
+          <dl class="stat-group">
+            <dt class="stat-head">LiDAR</dt><dd></dd>
+            <dt>frame rate</dt><dd id="st-lidar-fps">–</dd>
+            <dt>valid zones</dt><dd id="st-lidar-valid">–</dd>
+            <dt>depth range</dt><dd id="st-lidar-depth">–</dd>
+            <dt>median depth</dt><dd id="st-lidar-median">–</dd>
+            <dt>processing</dt><dd id="st-lidar-proc" title="ST transform library, WebAssembly, per frame">–</dd>
+            <dt>MCU frames / drop</dt><dd id="st-lidar-mcu">–</dd>
+          </dl>
+          <dl class="stat-group">
+            <dt class="stat-head">Device</dt><dd></dd>
+            <dt>firmware</dt><dd id="st-dev-fw">–</dd>
+            <dt>IMU</dt><dd id="st-dev-imu">–</dd>
+            <dt>LiDAR</dt><dd id="st-dev-lidar">–</dd>
+            <dt>serial</dt><dd id="st-dev-serial" class="truncate" title="">–</dd>
+          </dl>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

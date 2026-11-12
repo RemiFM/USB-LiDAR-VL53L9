@@ -1,0 +1,17 @@
+{
+  "source_repository": "https://github.com/hellosamblack/lidar-roomscanner",
+  "source_commit": "443213d181e75d1e07e51e3b4e1b5e115c610058",
+  "package": "STSW-IMG053 vl53l9-stm32n6570-dk-1.0.1",
+  "component": "drivers/vl53l9",
+  "license": "BSD-3-Clause, see LICENSE.txt and ../STSW-IMG053-LICENSE.md",
+  "local_change": "Initialize sync_mode before one-byte read; use uint8_t for FSM and command reads; return an invalid FSM on transport failure instead of indeterminate data.",
+  "sha256": {
+    "vl53l9_reg.h": "753780679fa54ad5a62f1c8722e68114466d9cc2dcd1ee3959b666bac5c72b05",
+    "vl53l9.c": "2b88b0c07a3a083e5d3306df43b0596a06f41543cdf93afadd5a729def1a712b",
+    "CHANGELOG.md": "d6095daef9a57cabb4c3e8c67cd3e48f48071f17e4c2cec7fcc108274963bbfe",
+    "LICENSE.txt": "d5a162f3eaf2b7b6762f00700017cae5695ebbdce7932fead8316448baafd9c1",
+    "vl53l9_platform.h": "7c252c3e34848ec122c3a5df4f812483e717a4860debff3df29c7a4aca96d1ec",
+    "vl53l9.h": "9204207c2ad54fc6858018a0e2403a00e1e92b38e439dd9e99dc2c35a2f02c59",
+    "vl53l9_patch.h": "d6b237c2c6608dd54c63b3dbc24ed38575c8b873ac3c1c3bde4ff959af505c53"
+  }
+}

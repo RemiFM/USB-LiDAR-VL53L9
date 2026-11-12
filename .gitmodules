@@ -1,0 +1,9 @@
+[submodule "firmware/vendor/lsm6dsv"]
+	path = firmware/vendor/lsm6dsv
+	url = https://github.com/STMicroelectronics/lsm6dsv-pid.git
+[submodule "firmware/vendor/lsm6dsv16x"]
+	path = firmware/vendor/lsm6dsv16x
+	url = https://github.com/STMicroelectronics/lsm6dsv16x-pid.git
+[submodule "firmware/vendor/lsm6dsv16bx"]
+	path = firmware/vendor/lsm6dsv16bx
+	url = https://github.com/STMicroelectronics/lsm6dsv16bx-pid.git
